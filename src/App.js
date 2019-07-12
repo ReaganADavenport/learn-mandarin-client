@@ -1,26 +1,21 @@
+//import libraries
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+//import components
+import CardList from './components/CardList';
+import Card from './components/Card';
+//import CSS
 import './App.css';
+import 'bulma/css/bulma.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Route path="/" exact component={BlogList}/>
+        <Route path="/post/:post_id?" component={BlogPost}/>
+      </Router>
+      
     </div>
   );
 }
-
-export default App;
