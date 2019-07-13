@@ -1,17 +1,23 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-import { Card, CardImage, Image, Content } from 'bloomer';
+import { Card, Content } from 'bloomer';
 
 
-const FlashCard = props => {
-    const {user} = props;
-    return (
-        <Card>
-            <Content>
-                <p></p>
-            </Content>
-        </Card>
-    )
+class FlashCard extends Component {
+    state= {
+        vocabulary: []
+    }; 
+
+    render(){
+        const { vocabulary } = this.state;
+        return (
+            <Card>
+                <Content>
+                    <p>{vocabulary.character}</p>
+                </Content>
+            </Card>
+        )
+    }
 }
 
 export default FlashCard;

@@ -7,19 +7,19 @@ import { Section, Columns, Column } from 'bloomer'
 
 
 class CardList extends Component{
-    state ={
+    state = {
         vocabulary:[]
     }
 
     async componentDidMount(){
-        const vocabulary = await this.loadData();
+        const vocab = await this.loadData();
         this.setState({
-            vocabulary
+            vocab
         });
     };
 
     loadData = async () => {
-        const url = 'http://localhost:3000/v1/all';
+        const url = 'http://localhost:3000/v1/greetings';
         const response = await fetch(url);
         const data = response.json();
         return data;
@@ -29,18 +29,20 @@ class CardList extends Component{
         const { vocabulary } = this.state;
 
         return(
-            <>
-                <h1>Blog List</h1>
-                <ul>
-                    {vocabulary.map(vocab => {
-                        return (
-                            <li key={`post-${vocab.id}`}>
-                                {vocab.character}
-                            </li>
-                        )
-                    })}
-                </ul>
-            </>
+            <Section>
+                <h1>Vocabulary</h1>
+                <Columns>
+                    {vocabulary.length > 0 ?
+                        vocabulary.map(vocab =>
+                            <Column key={`vocab-${vocab.id}`}>
+                                <FlashCard vocabulary={vocab.character} />
+                            </Column>
+                    )
+                    :
+                    <Column>No Vocabulary</Column>
+                    }
+                </Columns>
+            </Section>
         )
     }
 }
