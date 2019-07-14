@@ -3,7 +3,17 @@ import PropTypes from 'prop-types';
 
 import FlashCard from './Card';
 
-import { Section, Columns, Column } from 'bloomer'
+import { Section, Columns, Column } from 'bloomer';
+
+const listStyle = {
+    alignContent: 'space-between',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    listStyleType: 'none',
+    margin: 0,
+    padding: 0
+}
 
 
 class CardList extends Component{
@@ -12,9 +22,9 @@ class CardList extends Component{
     }
 
     async componentDidMount(){
-        const vocab = await this.loadData();
+        const vocabulary = await this.loadData();
         this.setState({
-            vocab
+            vocabulary
         });
         console.log ('state is', this.state);
     };
@@ -28,13 +38,13 @@ class CardList extends Component{
     }
 
     render(){
-        const { vocab } = this.state;
+        const { vocabulary } = this.state;
         return(
             <Section>
             <h1>Vocabulary</h1>
-            <Columns>
-                {vocab.length > 0 ?
-                    vocab.map(term =>
+            <Columns style={listStyle}>
+                {vocabulary.length > 0 ?
+                    vocabulary.map(term =>
                         <Column key={term.id}>
                             <FlashCard vocabWord= {term} />
                         </Column>
