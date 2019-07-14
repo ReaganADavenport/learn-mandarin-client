@@ -16,39 +16,41 @@ class CardList extends Component{
         this.setState({
             vocab
         });
+        console.log ('state is', this.state);
     };
 
     loadData = async () => {
         const url = 'http://localhost:3000/v1/greetings';
         const response = await fetch(url);
         const data = response.json();
+        console.log('data is', data);
         return data;
     }
 
     render(){
-        const { vocabulary } = this.state;
-
+        const { vocab } = this.state;
         return(
             <Section>
-                <h1>Vocabulary</h1>
-                <Columns>
-                    {vocabulary.length > 0 ?
-                        vocabulary.map(vocab =>
-                            <Column key={`vocab-${vocab.id}`}>
-                                <FlashCard vocabulary={vocab.character} />
-                            </Column>
+            <h1>Vocabulary</h1>
+            <Columns>
+                {vocab.length > 0 ?
+                    vocab.map(term =>
+                        <Column key={term.id}>
+                            <FlashCard vocabWord= {term} />
+                        </Column>
                     )
                     :
                     <Column>No Vocabulary</Column>
-                    }
-                </Columns>
+                }
+            </Columns>
             </Section>
-        )
+    )
     }
 }
 
 CardList.propTypes = {
-    userData: PropTypes.array
+    vocab: PropTypes.array
 };
 
 export default CardList;
+
