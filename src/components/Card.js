@@ -6,29 +6,44 @@ const cardStyle = {
     background: 'red',
     border: 'solid 1px black',
     height: '200px',
-    margin: '10px',
+    margin: '1px',
     width: '150px',
-    fontSize: '35px',
+    fontSize: '25px',
     color: '#fff'
 };
 
 class FlashCard extends Component {
     state = {
-        displayAnswer: false
+        showAnswer: false
     };
 
     // componentDidMount() {
     //     const { vocabWord } =
     // }
 
+
+
     render(){
         const { vocabWord } = this.props;
+        const { showAnswer } = this.state;
         return (
             <Card style={cardStyle}>
-                <Content>
+                {!!showAnswer ?
+                    <Content>
+                    <p>{vocabWord.character}</p>
+                    <p>{vocabWord.english}</p>
+                    <input></input>
+                    <button>Submit</button>
+                    </Content>
+                    :
+                    <Content>
                     <p>{vocabWord.character}</p>
                     <input></input>
                     <button>Submit</button>
+                    </Content>
+                }
+                <Content>
+                    
                 </Content>
             </Card>
         );
