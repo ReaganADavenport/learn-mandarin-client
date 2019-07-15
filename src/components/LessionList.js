@@ -15,7 +15,7 @@ const Lessions = () => {
     return(
         <>
         <h1>Lessons:</h1>
-        <ul>
+        <ul style={listStyle}>
             <li style={listStyle}>
                 <Link to={`/greetings`}>Greetings</Link>
             </li>
