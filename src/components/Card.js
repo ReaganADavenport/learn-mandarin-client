@@ -4,12 +4,12 @@ import { Card, Content } from 'bloomer';
 
 const cardStyle = {
     background: 'red',
-    border: 'solid 1px rebeccapurple',
+    border: 'solid 1px black',
     height: '200px',
     margin: '10px',
     width: '150px',
-    font_size: '32px',
-    font_color: 'black'
+    font_size: '100px',
+    font_color: 'white'
 };
 
 const FlashCard = props => {
