@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Content } from 'bloomer';
-    
+
 
 const cardStyle = {
     background: 'darkred',

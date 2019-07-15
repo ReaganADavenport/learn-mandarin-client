@@ -2,6 +2,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 //import components
+import Lessions from './components/LessionList';
 import GreetingList from './components/GreetingList';
 import NationalitiesList from './components/NationalitiesList';
 import FamilyList from './components/FamilyList';
@@ -13,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route path="/" exact component={FamilyList} />
+        <Route path="/" exact component={Lessions} />
         <Route path="/greetings" component={GreetingList}/>
         <Route path="/nationalities" component={NationalitiesList}/>
         <Route path="/family" component={FamilyList}/>
