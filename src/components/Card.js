@@ -3,7 +3,7 @@ import { Card, Content } from 'bloomer';
     
 
 const cardStyle = {
-    background: 'red',
+    background: 'black',
     border: 'solid 1px black',
     height: '200px',
     margin: '1px',
@@ -14,7 +14,8 @@ const cardStyle = {
 
 class FlashCard extends Component {
     state = {
-        showAnswer: false
+        showAnswer: false,
+        input: ""
     };
 
     displayAnswer = () => {
@@ -23,32 +24,38 @@ class FlashCard extends Component {
         })
     };
 
+    changeInput = input => {
+        const lowerCaseInput = input.toLowerCase();
+    
+        this.setState({input: lowerCaseInput});
+    };
+
     handleClick = () => {
         const displayChange = this.displayAnswer();
-        return displayChange;
+        return(displayChange);
     };
 
     render(){
         const { vocabWord } = this.props;
-        const { showAnswer } = this.state;
+        const { showAnswer, input } = this.state;
         return (
             <Card style={cardStyle}>
+                 <Content>
+                    <p>{vocabWord.character}</p>
                 {!!showAnswer ?
-                    <Content>
-                    <p>{vocabWord.character}</p>
-                    <p>{vocabWord.english}</p>
-                    <input></input>
-                    <button>Submit</button>
-                    </Content>
+                    <>
+                        <p>{vocabWord.english}</p>
+                        {input === vocabWord.english ?
+                            <span>✅</span>
+                        :
+                            <span>❌</span>
+                        }
+                    </>
                     :
-                    <Content>
-                    <p>{vocabWord.character}</p>
-                    <input></input>
-                    <button onClick={this.handleClick}>Submit</button>
-                    </Content>
+                    null
                 }
-                <Content>
-                    
+                    <input type="text" onChange={e => this.changeInput(e.target.value)} value={input}/>
+                    <button onClick={this.handleClick}>Submit</button>
                 </Content>
             </Card>
         );
