@@ -17,11 +17,16 @@ class FlashCard extends Component {
         showAnswer: false
     };
 
-    // componentDidMount() {
-    //     const { vocabWord } =
-    // }
+    displayAnswer = () => {
+        this.setState({
+            showAnswer: true
+        })
+    };
 
-
+    handleClick = () => {
+        const displayChange = this.displayAnswer();
+        return displayChange;
+    };
 
     render(){
         const { vocabWord } = this.props;
@@ -39,7 +44,7 @@ class FlashCard extends Component {
                     <Content>
                     <p>{vocabWord.character}</p>
                     <input></input>
-                    <button>Submit</button>
+                    <button onClick={this.handleClick}>Submit</button>
                     </Content>
                 }
                 <Content>
