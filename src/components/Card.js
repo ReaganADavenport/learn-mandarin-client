@@ -3,13 +3,13 @@ import { Card, Content } from 'bloomer';
     
 
 const cardStyle = {
-    background: 'black',
+    background: 'darkred',
     border: 'solid 1px black',
     height: '200px',
     margin: '1px',
     width: '150px',
     fontSize: '25px',
-    color: '#fff'
+    color: 'white'
 };
 
 class FlashCard extends Component {
@@ -40,7 +40,7 @@ class FlashCard extends Component {
         const { showAnswer, input } = this.state;
         return (
             <Card style={cardStyle}>
-                 <Content>
+                <Content>
                     <p>{vocabWord.character}</p>
                 {!!showAnswer ?
                     <>
