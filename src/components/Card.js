@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Card, Content } from 'bloomer';
     
 
@@ -8,20 +8,31 @@ const cardStyle = {
     height: '200px',
     margin: '10px',
     width: '150px',
-    font_size: '100px',
-    font_color: 'white'
+    fontSize: '35px',
+    color: '#fff'
 };
 
-const FlashCard = props => {
-    const { vocabWord } = props;
-    return (
-        <Card style={cardStyle}>
-            <Content>
-                <p>{vocabWord.character}</p>
-                <input></input>
-            </Content>
-        </Card>
-    )
+class FlashCard extends Component {
+    state = {
+        displayAnswer: false
+    };
+
+    // componentDidMount() {
+    //     const { vocabWord } =
+    // }
+
+    render(){
+        const { vocabWord } = this.props;
+        return (
+            <Card style={cardStyle}>
+                <Content>
+                    <p>{vocabWord.character}</p>
+                    <input></input>
+                    <button>Submit</button>
+                </Content>
+            </Card>
+        );
+    }
 };
 
 export default FlashCard; 

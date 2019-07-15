@@ -16,7 +16,7 @@ const listStyle = {
 }
 
 
-class CardList extends Component{
+class GreetingList extends Component{
     state = {
         vocabulary:[]
     }
@@ -58,9 +58,9 @@ class CardList extends Component{
     }
 }
 
-CardList.propTypes = {
+GreetingList.propTypes = {
     vocab: PropTypes.array
 };
 
-export default CardList;
+export default GreetingList;
 
