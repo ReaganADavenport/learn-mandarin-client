@@ -25,6 +25,15 @@ const Lessions = () => {
             <li style={listStyle}>
                 <Link to={`/family`}>Family</Link>
             </li>
+            <li style={listStyle}>
+                <Link to={`/numbers`}>Numbers</Link>
+            </li>
+            <li style={listStyle}>
+                <Link to={`/days_and_months`}>Days and Months</Link>
+            </li>
+            <li style={listStyle}>
+                <Link to={`/dates`}>Dates</Link>
+            </li>
         </ul>
         </>
     )
