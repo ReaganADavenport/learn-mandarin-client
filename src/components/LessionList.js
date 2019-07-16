@@ -8,13 +8,14 @@ const listStyle = {
     justifyContent: 'center',
     listStyleType: 'none',
     margin: '10px',
-    padding: 0
+    padding: 0,
+    fontSize: '25px'
 }
 
 const Lessions = () => {
     return(
         <>
-        <h1>Lessons:</h1>
+        <h1>Lessons in Mandarin:</h1>
         <ul style={listStyle}>
             <li style={listStyle}>
                 <Link to={`/greetings`}>Greetings</Link>

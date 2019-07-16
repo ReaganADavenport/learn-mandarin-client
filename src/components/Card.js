@@ -15,7 +15,8 @@ const cardStyle = {
 class FlashCard extends Component {
     state = {
         showAnswer: false,
-        input: ""
+        input: "",
+        isFlipped: false
     };
 
     displayAnswer = () => {
@@ -24,9 +25,14 @@ class FlashCard extends Component {
         })
     };
 
+    flipCard = () =>{
+        this.setState({
+            isFlipped:true
+        })
+    };
+
     changeInput = input => {
         const lowerCaseInput = input.toLowerCase();
-    
         this.setState({input: lowerCaseInput});
     };
 
@@ -36,28 +42,42 @@ class FlashCard extends Component {
     };
 
     render(){
+        const FlashCardInnerClass = 'MemoryCardInner';
+        if (this.props.isFlipped) {
+            FlashCardInnerClass += ' flipped';
+        }
         const { vocabWord } = this.props;
         const { showAnswer, input } = this.state;
         return (
-            <Card style={cardStyle}>
-                <Content>
-                    <p>{vocabWord.character}</p>
-                {!!showAnswer ?
-                    <>
-                        <p>{vocabWord.english}</p>
-                        {input === vocabWord.english ?
-                            <span>✅</span>
-                        :
-                            <span>❌</span>
-                        }
-                    </>
-                    :
-                    null
-                }
-                    <input type="text" onChange={e => this.changeInput(e.target.value)} value={input}/>
-                    <button onClick={this.handleClick}>Submit</button>
-                </Content>
-            </Card>
+            <div className="Card">
+                <div class="Front">
+                    <Card style={cardStyle}>
+                        <Content>
+                            <p>{vocabWord.character}</p>
+                            <input type="text" onChange={e => this.changeInput(e.target.value)} value={input}/>
+                            <button className={FlashCardInnerClass} onClick={this.handleClick}>Submit</button>
+                        </Content>
+                    </Card>
+                </div>
+                <div class="Back">
+                    <Card style={cardStyle}>
+                        <Content>
+                            {!!showAnswer ?
+                                <>
+                                <p>{vocabWord.english}</p>
+                                {input === vocabWord.english ?
+                                    <span>✅</span>
+                                    :
+                                    <span>❌</span>
+                                }
+                                </>
+                                :
+                                null
+                            }
+                        </Content>
+                    </Card>
+                </div>
+            </div>
         );
     }
 };
