@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import FlashCard from './Card';
 
@@ -54,6 +55,7 @@ class NationalitiesList extends Component {
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
+            <Link to={`nationalities/challenge`}>Want a Challenge?</Link>
             </Section>
     )
     }

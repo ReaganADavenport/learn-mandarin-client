@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import FlashCard from './Card';
 
@@ -42,6 +43,7 @@ class FamilyList extends Component{
         return(
             <Section>
             <h1>Vocabulary</h1>
+            <h2>Please Type the English translation of the Mandarin Character</h2>
             <Columns style={listStyle}>
                 {vocabulary.length > 0 ?
                     vocabulary.map(term =>
@@ -53,6 +55,7 @@ class FamilyList extends Component{
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
+            <Link to={`family/challenge`}>Want a Challenge?</Link>
             </Section>
     )
     }
