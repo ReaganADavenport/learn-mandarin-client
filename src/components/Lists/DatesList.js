@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-import ChallengeCard from './ChallengeCard';
+import FlashCard from '../Card';
 
 import { Section, Columns, Column } from 'bloomer';
 
@@ -16,7 +17,7 @@ const listStyle = {
 }
 
 
-class GreetingChallenge extends Component{
+class DatesList extends Component {
     state = {
         vocabulary:[]
     }
@@ -30,7 +31,7 @@ class GreetingChallenge extends Component{
     };
 
     loadData = async () => {
-        const url = 'http://localhost:3000/v1/greetings';
+        const url = 'http://localhost:3000/v1/dates';
         const response = await fetch(url);
         const data = response.json();
         console.log('data is', data);
@@ -42,26 +43,26 @@ class GreetingChallenge extends Component{
         return(
             <Section>
             <h1>Vocabulary</h1>
-            <h2>Please type the Pinyin with the Corresponding Tones</h2>
-            <p>Ex. chang4 ge1</p>
             <Columns style={listStyle}>
                 {vocabulary.length > 0 ?
                     vocabulary.map(term =>
                         <Column key={term.id}>
-                            <ChallengeCard vocabWord= {term} />
+                            <FlashCard vocabWord= {term} />
                         </Column>
+                        
                     )
                     :
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
+            <Link to={`dates/challenge`}>Want a Challenge?</Link>
             </Section>
     )
     }
 }
 
-GreetingChallenge.propTypes = {
+DatesList.propTypes = {
     vocab: PropTypes.array
 };
 
-export default GreetingChallenge;
+export default DatesList;

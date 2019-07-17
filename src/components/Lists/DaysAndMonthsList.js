@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import FlashCard from './Card';
+import FlashCard from '../Card';
 
 import { Section, Columns, Column } from 'bloomer';
 
@@ -17,7 +17,7 @@ const listStyle = {
 }
 
 
-class NationalitiesList extends Component {
+class DaysAndMonthsList extends Component {
     state = {
         vocabulary:[]
     }
@@ -31,7 +31,7 @@ class NationalitiesList extends Component {
     };
 
     loadData = async () => {
-        const url = 'http://localhost:3000/v1/nationalities';
+        const url = 'http://localhost:3000/v1/days_and_months';
         const response = await fetch(url);
         const data = response.json();
         console.log('data is', data);
@@ -55,14 +55,14 @@ class NationalitiesList extends Component {
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
-            <Link to={`nationalities/challenge`}>Want a Challenge?</Link>
+            <Link to={`days_and_months/challenge`}>Want a Challenge?</Link>
             </Section>
     )
     }
 }
 
-NationalitiesList.propTypes = {
+DaysAndMonthsList.propTypes = {
     vocab: PropTypes.array
 };
 
-export default NationalitiesList;
+export default DaysAndMonthsList;

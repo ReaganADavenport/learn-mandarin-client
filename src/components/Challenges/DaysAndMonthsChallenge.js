@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
-import FlashCard from './Card';
+import ChallengeCard from '../ChallengeCard';
 
 import { Section, Columns, Column } from 'bloomer';
 
@@ -17,7 +16,7 @@ const listStyle = {
 }
 
 
-class DaysAndMonthsList extends Component {
+class DaysAndMonthsChallenge extends Component{
     state = {
         vocabulary:[]
     }
@@ -43,26 +42,26 @@ class DaysAndMonthsList extends Component {
         return(
             <Section>
             <h1>Vocabulary</h1>
+            <h2>Please type the Pinyin with the Corresponding Tones</h2>
+            <p>Ex. chang4 ge1</p>
             <Columns style={listStyle}>
                 {vocabulary.length > 0 ?
                     vocabulary.map(term =>
                         <Column key={term.id}>
-                            <FlashCard vocabWord= {term} />
+                            <ChallengeCard vocabWord= {term} />
                         </Column>
-                        
                     )
                     :
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
-            <Link to={`days_and_months/challenge`}>Want a Challenge?</Link>
             </Section>
     )
     }
 }
 
-DaysAndMonthsList.propTypes = {
+DaysAndMonthsChallenge.propTypes = {
     vocab: PropTypes.array
 };
 
-export default DaysAndMonthsList;
+export default DaysAndMonthsChallenge;

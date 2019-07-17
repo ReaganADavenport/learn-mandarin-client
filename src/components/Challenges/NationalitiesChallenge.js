@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
-import FlashCard from './Card';
+import ChallengeCard from '../ChallengeCard';
 
 import { Section, Columns, Column } from 'bloomer';
 
@@ -17,7 +16,7 @@ const listStyle = {
 }
 
 
-class FamilyList extends Component{
+class NationalitiesChallenge extends Component{
     state = {
         vocabulary:[]
     }
@@ -31,38 +30,38 @@ class FamilyList extends Component{
     };
 
     loadData = async () => {
-        const url = 'http://localhost:3000/v1/family';
+        const url = 'http://localhost:3000/v1/nationalities';
         const response = await fetch(url);
         const data = response.json();
         console.log('data is', data);
         return data;
-    };
+    }
 
     render(){
         const { vocabulary } = this.state;
         return(
             <Section>
             <h1>Vocabulary</h1>
-            <h2>Please Type the English translation of the Mandarin Character</h2>
+            <h2>Please type the Pinyin with the Corresponding Tones</h2>
+            <p>Ex. chang4 ge1</p>
             <Columns style={listStyle}>
                 {vocabulary.length > 0 ?
                     vocabulary.map(term =>
                         <Column key={term.id}>
-                            <FlashCard vocabWord= {term} />
+                            <ChallengeCard vocabWord= {term} />
                         </Column>
                     )
                     :
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
-            <Link to={`family/challenge`}>Want a Challenge?</Link>
             </Section>
     )
     }
 }
 
-FamilyList.propTypes = {
+NationalitiesChallenge.propTypes = {
     vocab: PropTypes.array
 };
 
-export default FamilyList;
+export default NationalitiesChallenge;

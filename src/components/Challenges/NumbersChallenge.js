@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-import ChallengeCard from './ChallengeCard';
+import ChallengeCard from '../ChallengeCard';
 
 import { Section, Columns, Column } from 'bloomer';
 
@@ -16,7 +16,7 @@ const listStyle = {
 }
 
 
-class NationalitiesChallenge extends Component{
+class NumbersChallenge extends Component{
     state = {
         vocabulary:[]
     }
@@ -30,7 +30,7 @@ class NationalitiesChallenge extends Component{
     };
 
     loadData = async () => {
-        const url = 'http://localhost:3000/v1/nationalities';
+        const url = 'http://localhost:3000/v1/numbers';
         const response = await fetch(url);
         const data = response.json();
         console.log('data is', data);
@@ -60,8 +60,8 @@ class NationalitiesChallenge extends Component{
     }
 }
 
-NationalitiesChallenge.propTypes = {
+NumbersChallenge.propTypes = {
     vocab: PropTypes.array
 };
 
-export default NationalitiesChallenge;
+export default NumbersChallenge;

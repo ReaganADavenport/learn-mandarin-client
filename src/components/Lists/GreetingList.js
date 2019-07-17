@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import FlashCard from './Card';
+import FlashCard from '../Card';
 
 import { Section, Columns, Column } from 'bloomer';
 
