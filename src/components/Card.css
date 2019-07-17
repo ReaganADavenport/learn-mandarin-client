@@ -17,14 +17,6 @@
     position: relative;
 }
 
-/* .challengeCard .Front{
-    background-color: black;
-}
-
-.challengeCard .Back{
-    background-color: black;
-} */
-
 .CardInner{
     transform-style: preserve-3d;
     transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -48,7 +40,7 @@
 }
 
 .Back {
-    background-color: darkred;
+    background-color: black;
     transform: rotateY(180deg);
     text-align: center;
     width: 100%;
