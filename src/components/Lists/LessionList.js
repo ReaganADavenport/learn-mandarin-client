@@ -15,7 +15,7 @@ const listStyle = {
 const Lessions = () => {
     return(
         <>
-        <h1>Lessons in Mandarin:</h1>
+        <h1>Mandarin Lessons:</h1>
         <ul style={listStyle}>
             <li style={listStyle}>
                 <Link to={`/greetings`}>Greetings</Link>

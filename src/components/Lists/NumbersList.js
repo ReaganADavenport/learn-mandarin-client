@@ -43,6 +43,7 @@ class NumbersList extends Component {
         return(
             <Section>
             <h1>Vocabulary</h1>
+            <h2>Type in the English Translation of the Mandarin Character</h2>
             <Columns style={listStyle}>
                 {vocabulary.length > 0 ?
                     vocabulary.map(term =>
