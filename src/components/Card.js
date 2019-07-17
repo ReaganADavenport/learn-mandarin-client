@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
-import { Card, Content } from 'bloomer';
 
 
-const cardStyle = {
-    background: 'darkred',
-    border: 'solid 1px black',
-    height: '200px',
-    margin: '1px',
-    width: '150px',
-    fontSize: '25px',
-    color: 'white'
-};
+import "./Card.css";
+
 
 class FlashCard extends Component {
     state = {
@@ -38,45 +30,43 @@ class FlashCard extends Component {
 
     handleClick = () => {
         const displayChange = this.displayAnswer();
-        return(displayChange);
+        const flipped = this.flipCard();
+        return(
+            displayChange,
+            flipped
+            );
     };
 
     render(){
-        const FlashCardInnerClass = 'MemoryCardInner';
-        if (this.props.isFlipped) {
-            FlashCardInnerClass += ' flipped';
-        }
+        // const FlashCardInnerClass = 'CardInner';
+        // if (this.props.isFlipped) {
+        //     FlashCardInnerClass += ' flipped';
+        // }
         const { vocabWord } = this.props;
-        const { showAnswer, input } = this.state;
+        const { showAnswer, input, isFlipped } = this.state;
         return (
-            <div className="Card">
-                <div class="Front">
-                    <Card style={cardStyle}>
-                        <Content>
-                            <p>{vocabWord.character}</p>
-                            <input type="text" onChange={e => this.changeInput(e.target.value)} value={input}/>
-                            <button className={FlashCardInnerClass} onClick={this.handleClick}>Submit</button>
-                        </Content>
-                    </Card>
-                </div>
-                <div class="Back">
-                    <Card style={cardStyle}>
-                        <Content>
-                            {!!showAnswer ?
-                                <>
-                                <p>{vocabWord.english}</p>
-                                {input === vocabWord.english ?
-                                    <span>✅</span>
+            <div className={ isFlipped ? 'flashcard flipped' : 'flashcard'}>
+                
+                    <div class="Front">
+                                <p>{vocabWord.character}</p>
+                                <input type="text" onChange={e => this.changeInput(e.target.value)} value={input}/>
+                                <button onClick={this.handleClick}>Submit</button>
+                    </div>
+                    <div class="Back">
+                                {!!showAnswer ?
+                                    <>
+                                    <p>{vocabWord.english}</p>
+                                    {input === vocabWord.english ?
+                                        <span>✅</span>
+                                        :
+                                        <span>❌</span>
+                                    }
+                                    </>
                                     :
-                                    <span>❌</span>
+                                    null
                                 }
-                                </>
-                                :
-                                null
-                            }
-                        </Content>
-                    </Card>
-                </div>
+                    </div>
+            
             </div>
         );
     }

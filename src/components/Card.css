@@ -1,0 +1,59 @@
+.flashcard .content {
+    text-align: center;
+}
+
+.flashcard { 
+    border: solid 1px black;
+    height: 200px;
+    margin: 1px;
+    width: 150px;
+    font-size: 25px;
+    color: white;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 6px;
+    cursor: pointer;
+    perspective: 800px;
+    position: relative;
+}
+
+/* .challengeCard .Front{
+    background-color: black;
+}
+
+.challengeCard .Back{
+    background-color: black;
+} */
+
+.CardInner{
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backface-visibility: hidden;
+}
+
+.Front, .Back{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    
+    display: block;
+}
+
+.Front{
+    background-color: darkred;
+    backface-visibility: hidden;
+    text-align: center;
+    /*transform: rotateY(180deg);*/
+}
+
+.Back {
+    background-color: darkred;
+    transform: rotateY(180deg);
+    text-align: center;
+    width: 100%;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}

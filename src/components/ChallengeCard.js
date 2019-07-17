@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
-import { Card, Content } from 'bloomer';
 
+import "./Card.css";
 
-const cardStyle = {
-    background: 'black',
-    border: 'solid 1px black',
-    height: '200px',
-    margin: '1px',
-    width: '150px',
-    fontSize: '25px',
-    color: 'white'
-};
 
 class ChallengeCard extends Component {
     state = {
         showAnswer: false,
-        input: ""
+        input: "",
+        isFlipped: false
     };
 
     displayAnswer = () => {
         this.setState({
             showAnswer: true
+        })
+    };
+
+    flipCard = () =>{
+        this.setState({
+            isFlipped:true
         })
     };
 
@@ -32,32 +30,39 @@ class ChallengeCard extends Component {
 
     handleClick = () => {
         const displayChange = this.displayAnswer();
-        return(displayChange);
+        const flipped = this.flipCard();
+        return(
+            displayChange,
+            flipped
+            );
     };
 
     render(){
         const { vocabWord } = this.props;
-        const { showAnswer, input } = this.state;
+        const { showAnswer, input, isFlipped } = this.state;
         return (
-            <Card style={cardStyle}>
-                <Content>
+            <div className={ isFlipped ? 'flashcard flipped' : 'flashcard'}>
+
+                <div class="Front">
                     <p>{vocabWord.english}</p>
-                {!!showAnswer ?
-                    <>
-                        <p>{vocabWord.pinyin}</p>
-                        {input === vocabWord.pinyin ?
-                            <span>✅</span>
-                        :
-                            <span>❌</span>
-                        }
-                    </>
-                    :
-                    null
-                }
                     <input type="text" onChange={e => this.changeInput(e.target.value)} value={input}/>
                     <button onClick={this.handleClick}>Submit</button>
-                </Content>
-            </Card>
+                </div>
+                <div class="Back">
+                    {!!showAnswer ?
+                        <>
+                            <p>{vocabWord.pinyin}</p>
+                            {input === vocabWord.pinyin ?
+                                <span>✅</span>
+                                :
+                                <span>❌</span>
+                            }
+                                </>
+                            :
+                                null
+                    }
+                    </div>
+            </div>
         );
     }
 };
