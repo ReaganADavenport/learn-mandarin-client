@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 
 import FlashCard from '../Card';
 
-import { Section, Columns, Column } from 'bloomer';
+import './List.css';
+
+import {Columns, Column } from 'bloomer';
 
 const listStyle = {
     alignContent: 'space-between',
@@ -41,7 +43,7 @@ class DatesList extends Component {
     render(){
         const { vocabulary } = this.state;
         return(
-            <Section>
+            <div className="List">
             <h1>Vocabulary</h1>
             <h2>Type in the English Translation of the Mandarin Character</h2>
             <Columns style={listStyle}>
@@ -57,7 +59,7 @@ class DatesList extends Component {
                 }
             </Columns>
             <Link to={`dates/challenge`}>Want a Challenge?</Link>
-            </Section>
+            </div>
     )
     }
 }

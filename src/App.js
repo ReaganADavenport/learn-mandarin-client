@@ -22,7 +22,6 @@ import Footer from './components/footer';
 //import CSS
 import './App.css';
 import 'bulma/css/bulma.css';
-import './images/chinese-frame-background_48190-346.jpg';
 
 function App() {
   return (

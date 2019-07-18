@@ -41,7 +41,7 @@ class FamilyList extends Component{
     render(){
         const { vocabulary } = this.state;
         return(
-            <Section>
+            <div className="List">
             <h1>Vocabulary</h1>
             <h2>Please Type the English translation of the Mandarin Character</h2>
             <Columns style={listStyle}>
@@ -56,7 +56,7 @@ class FamilyList extends Component{
                 }
             </Columns>
             <Link to={`family/challenge`}>Want a Challenge?</Link>
-            </Section>
+            </div>
     )
     }
 }

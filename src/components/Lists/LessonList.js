@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import './List.css';
 
 const ListStyle = styled.ul`
     align-content: space-between;
@@ -28,7 +29,7 @@ const ListStyle = styled.ul`
 
 const Lessons = () => {
     return(
-        <div className="Lessons">
+        <div className="List">
         <h1>Mandarin Lessons:</h1>
         <ListStyle>
             <li>
