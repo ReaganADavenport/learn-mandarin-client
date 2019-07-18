@@ -52,6 +52,7 @@ class ChallengeCard extends Component {
                     {!!showAnswer ?
                         <>
                             <p>{vocabWord.pinyin}</p>
+                            <p>{vocabWord.english}</p>
                             {input === vocabWord.pinyin ?
                                 <span>✅</span>
                                 :

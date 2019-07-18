@@ -8,6 +8,7 @@
     margin: 1px;
     width: 150px;
     font-size: 25px;
+    font-family: 'Amiri', serif;
     color: white;
     transform-style: preserve-3d;
     transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -28,7 +29,6 @@
     top:0;
     left: 0;
     height: 100%;
-    
     display: block;
 }
 

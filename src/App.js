@@ -3,7 +3,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 //import components
 import Header from './components/header';
-import Lessions from './components/Lists/LessionList';
+import Lessons from './components/Lists/LessonList';
 import GreetingList from './components/Lists/GreetingList';
 import GreetingChallenge from './components/Challenges/GreetingChallenge';
 import NationalitiesList from './components/Lists/NationalitiesList';
@@ -22,13 +22,15 @@ import Footer from './components/footer';
 //import CSS
 import './App.css';
 import 'bulma/css/bulma.css';
+import './images/chinese-frame-background_48190-346.jpg';
 
 function App() {
   return (
     <div>
+      <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet"/>
       <Router>
         <Header />
-        <Route path="/" exact component={Lessions} />
+        <Route path="/" exact component={Lessons} />
         <Route path="/greetings" exact component={GreetingList}/>
         <Route path="/greetings/challenge" component={GreetingChallenge}/>
         <Route path="/nationalities" exact component={NationalitiesList}/>

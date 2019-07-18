@@ -43,7 +43,7 @@ class HobbiesChallenge extends Component{
             <Section>
             <h1>Vocabulary</h1>
             <h2>Please type the Pinyin with the Corresponding Tones</h2>
-            <p>Ex. chang4 ge1</p>
+            <p>Ex. xi1la4 wen2</p>
             <Columns style={listStyle}>
                 {vocabulary.length > 0 ?
                     vocabulary.map(term =>

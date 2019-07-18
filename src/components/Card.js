@@ -56,6 +56,7 @@ class FlashCard extends Component {
                                 {!!showAnswer ?
                                     <>
                                     <p>{vocabWord.english}</p>
+                                    <p>{vocabWord.pinyin}</p>
                                     {input === vocabWord.english ?
                                         <span>✅</span>
                                         :
