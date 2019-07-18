@@ -8,6 +8,7 @@ import "./List.css";
 import { Section, Columns, Column } from 'bloomer';
 
 const listStyle = {
+    backgroundColor: 'rgba(0,0,0, 0.5)',
     alignContent: 'space-between',
     display: 'flex',
     flexWrap: 'wrap',
@@ -48,7 +49,7 @@ class GreetingList extends Component{
             <Columns style={listStyle}>
                 {vocabulary.length > 0 ?
                     vocabulary.map(term =>
-                        <Column key={term.id}>
+                        <Column key={term.id} style={listStyle}>
                             <FlashCard vocabWord= {term} />
                         </Column>
                     )

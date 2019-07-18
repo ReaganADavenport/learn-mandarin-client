@@ -12,7 +12,7 @@ const ListStyle = styled.ul`
     list-style-type: none;
     font-family: 'Amiri', serif;
     margin: 30px;
-    padding: 5px;
+    padding: 0;
 
     li {
         margin: 5px;
@@ -21,6 +21,7 @@ const ListStyle = styled.ul`
     };
 
     li a {
+        display: flex;
         align-content: center;
         justifyContent: center;
         color: white;

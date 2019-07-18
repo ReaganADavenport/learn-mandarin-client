@@ -9,6 +9,7 @@ import './List.css';
 import {Columns, Column } from 'bloomer';
 
 const listStyle = {
+    backgroundColor: 'rgba(0,0,0, 0.8)',
     alignContent: 'space-between',
     display: 'flex',
     flexWrap: 'wrap',
@@ -49,7 +50,7 @@ class DatesList extends Component {
             <Columns style={listStyle}>
                 {vocabulary.length > 0 ?
                     vocabulary.map(term =>
-                        <Column key={term.id}>
+                        <Column key={term.id} style={listStyle}>
                             <FlashCard vocabWord= {term} />
                         </Column>
                         

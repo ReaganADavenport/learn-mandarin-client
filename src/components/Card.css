@@ -39,6 +39,10 @@
     /*transform: rotateY(180deg);*/
 }
 
+.Front button{
+    color: white;
+}
+
 .Back {
     background-color: black;
     transform: rotateY(180deg);

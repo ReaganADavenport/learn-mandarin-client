@@ -2,10 +2,12 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
 import ChallengeCard from '../ChallengeCard';
+import './ChallengeList.css';
 
-import { Section, Columns, Column } from 'bloomer';
+import { Columns, Column } from 'bloomer';
 
 const listStyle = {
+    backgroundColor: 'rgba(0,0,0, 0.8)',
     alignContent: 'space-between',
     display: 'flex',
     flexWrap: 'wrap',
@@ -40,7 +42,7 @@ class NumbersChallenge extends Component{
     render(){
         const { vocabulary } = this.state;
         return(
-            <Section>
+            <div className="List">
             <h1>Vocabulary</h1>
             <h2>Please type the Pinyin with the Corresponding Tones</h2>
             <p>Ex. chang4 ge1</p>
@@ -55,7 +57,7 @@ class NumbersChallenge extends Component{
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
-            </Section>
+            </div>
     )
     }
 }
