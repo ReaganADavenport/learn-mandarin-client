@@ -16,6 +16,8 @@ import DaysAndMonthsList from './components/Lists/DaysAndMonthsList';
 import DaysAndMonthsChallenge from './components/Challenges/DaysAndMonthsChallenge';
 import DatesList from './components/Lists/DatesList';
 import DatesChallenge from './components/Challenges/DatesChallenge';
+import HobbiesList from './components/Lists/HobbiesList';
+import HobbiesChallenge from './components/Challenges/HobbiesChallenge';
 import Footer from './components/footer';
 //import CSS
 import './App.css';
@@ -39,6 +41,8 @@ function App() {
         <Route path="/days_and_months/challenge" component={DaysAndMonthsChallenge}/>
         <Route path="/dates" exact component={DatesList}/>
         <Route path="/dates/challenge" component={DatesChallenge}/>
+        <Route path="/hobbies" exact component={HobbiesList}/>
+        <Route path="/hobbies/challenge" component={HobbiesChallenge}/>
         <Footer />
       </Router>
       
