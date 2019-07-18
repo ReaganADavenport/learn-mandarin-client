@@ -33,14 +33,14 @@
 }
 
 .Front{
-    background-color: darkred;
+    background-color: black;
     backface-visibility: hidden;
     text-align: center;
     /*transform: rotateY(180deg);*/
 }
 
 .Front button{
-    color: white;
+    color: black;
 }
 
 .Back {

@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 import FlashCard from '../Card';
 
-import { Section, Columns, Column } from 'bloomer';
+import { Columns, Column } from 'bloomer';
 
 const listStyle = {
-    backgroundColor: 'rgba(0,0,0, 0.8)',
+    // backgroundColor: 'rgba(0,0,0, 0.8)',
     alignContent: 'space-between',
     display: 'flex',
     flexWrap: 'wrap',

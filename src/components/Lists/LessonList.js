@@ -23,7 +23,7 @@ const ListStyle = styled.ul`
     li a {
         display: flex;
         align-content: center;
-        justifyContent: center;
+        justify-content: center;
         color: white;
     }
 `

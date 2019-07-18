@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import FlashCard from '../Card';
+import './List.css';
 
-import { Section, Columns, Column } from 'bloomer';
+import { Columns, Column } from 'bloomer';
 
 const listStyle = {
-    backgroundColor: 'rgba(0,0,0, 0.8)',
+    // backgroundColor: 'rgba(0,0,0, 0.8)',
     alignContent: 'space-between',
     display: 'flex',
     flexWrap: 'wrap',
@@ -42,7 +43,7 @@ class DaysAndMonthsList extends Component {
     render(){
         const { vocabulary } = this.state;
         return(
-            <Section>
+            <div className="List">
             <h1>Vocabulary</h1>
             <h2>Type in the English Translation of the Mandarin Character</h2>
             <Columns style={listStyle}>
@@ -58,7 +59,7 @@ class DaysAndMonthsList extends Component {
                 }
             </Columns>
             <Link to={`days_and_months/challenge`}>Want a Challenge?</Link>
-            </Section>
+            </div>
     )
     }
 }

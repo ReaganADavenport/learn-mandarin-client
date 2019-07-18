@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 import FlashCard from '../Card';
 import "./List.css";
 
-import { Section, Columns, Column } from 'bloomer';
+import { Columns, Column } from 'bloomer';
 
 const listStyle = {
-    backgroundColor: 'rgba(0,0,0, 0.5)',
+    // backgroundColor: 'rgba(0,0,0, 0.5)',
     alignContent: 'space-between',
     display: 'flex',
     flexWrap: 'wrap',

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import ChallengeCard from '../ChallengeCard';
 import './ChallengeList.css';
 
-import { Section, Columns, Column } from 'bloomer';
+import { Columns, Column } from 'bloomer';
 
 const listStyle = {
     backgroundColor: 'rgba(0,0,0, 0.8)',
