@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import FlashCard from '../Card';
+import "./List.css";
 
-import { Section, Columns, Column } from 'bloomer';
+import { Columns, Column } from 'bloomer';
 
 const listStyle = {
     alignContent: 'space-between',
@@ -41,7 +42,7 @@ class HobbiesList extends Component {
     render(){
         const { vocabulary } = this.state;
         return(
-            <Section>
+            <div className="List">
             <h1>Vocabulary</h1>
             <h2>Type in the English Translation of the Mandarin Character</h2>
             <Columns style={listStyle}>
@@ -57,7 +58,7 @@ class HobbiesList extends Component {
                 }
             </Columns>
             <Link to={`hobbies/challenge`}>Want a Challenge?</Link>
-            </Section>
+            </div>
     )
     }
 }
