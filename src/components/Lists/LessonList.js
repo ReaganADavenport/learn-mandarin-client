@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './List.css';
 
 const ListStyle = styled.ul`
+    background-color: rgba(258,0,0, 0.65);
     align-content: space-between;
     display: flex;
     flex-wrap: wrap;
