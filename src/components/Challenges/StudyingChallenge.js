@@ -7,7 +7,7 @@ import './ChallengeList.css';
 import { Columns, Column } from 'bloomer';
 
 const listStyle = {
-    // backgroundColor: 'rgba(0,0,0, 0.8)',
+    backgroundColor: 'rgba(0,0,0, 0.8)',
     alignContent: 'space-between',
     display: 'flex',
     flexWrap: 'wrap',
@@ -18,7 +18,7 @@ const listStyle = {
 }
 
 
-class GreetingChallenge extends Component{
+class StudyingChallenge extends Component{
     state = {
         vocabulary:[]
     }
@@ -32,7 +32,7 @@ class GreetingChallenge extends Component{
     };
 
     loadData = async () => {
-        const url = 'http://localhost:3000/v1/greetings';
+        const url = 'http://localhost:3000/v1/studying';
         const response = await fetch(url);
         const data = response.json();
         console.log('data is', data);
@@ -62,8 +62,8 @@ class GreetingChallenge extends Component{
     }
 }
 
-GreetingChallenge.propTypes = {
+StudyingChallenge.propTypes = {
     vocab: PropTypes.array
 };
 
-export default GreetingChallenge;
+export default StudyingChallenge;

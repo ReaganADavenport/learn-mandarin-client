@@ -30,7 +30,7 @@ const ListStyle = styled.ul`
 
 const Lessons = () => {
     return(
-        <div className="List">
+        <div className="LessonList">
         <h1>Mandarin Lessons:</h1>
         <ListStyle>
             <li>
@@ -53,6 +53,15 @@ const Lessons = () => {
             </li>
             <li>
                 <Link to={`/hobbies`}>Hobbies</Link>
+            </li>
+            <li>
+                <Link to={`/visiting`}>Visiting</Link>
+            </li>
+            <li>
+                <Link to={`/appointments`}>Appointments</Link>
+            </li>
+            <li>
+                <Link to={`/studying`}>Studying</Link>
             </li>
         </ListStyle>
         </div>

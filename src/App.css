@@ -17,3 +17,7 @@
 .App-link {
   color: #61dafb;
 }
+
+.footer{
+  max-height: 20vh;
+}

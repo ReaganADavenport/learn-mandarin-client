@@ -18,6 +18,12 @@ import DatesList from './components/Lists/DatesList';
 import DatesChallenge from './components/Challenges/DatesChallenge';
 import HobbiesList from './components/Lists/HobbiesList';
 import HobbiesChallenge from './components/Challenges/HobbiesChallenge';
+import VisitingList from './components/Lists/VisitingList';
+import VisitingChallenge from './components/Challenges/VisitingChallenge';
+import AppointmentsList from './components/Lists/AppointmentsList';
+import AppointmentsChallenge from './components/Challenges/AppointmentsChallenge';
+import StudyingList from './components/Lists/StudyingList';
+import StudyingChallenge from './components/Challenges/StudyingChallenge';
 import Footer from './components/footer';
 //import CSS
 import './App.css';
@@ -44,9 +50,14 @@ function App() {
         <Route path="/dates/challenge" component={DatesChallenge}/>
         <Route path="/hobbies" exact component={HobbiesList}/>
         <Route path="/hobbies/challenge" component={HobbiesChallenge}/>
+        <Route path="/visiting" exact component={VisitingList}/>
+        <Route path="/visiting/challenge" component={VisitingChallenge}/>
+        <Route path="/appointments" exact component={AppointmentsList}/>
+        <Route path="/appointments/challenge" component={AppointmentsChallenge}/>
+        <Route path="/studying" exact component={StudyingList}/>
+        <Route path="/studying/challenge" component={StudyingChallenge}/>
         <Footer />
       </Router>
-      
     </div>
   );
 }
