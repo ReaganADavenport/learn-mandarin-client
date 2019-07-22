@@ -19,5 +19,6 @@
 }
 
 .footer{
-  max-height: 20vh;
+  height: 5vh;
+  padding: 0;
 }

@@ -38,10 +38,6 @@ class FlashCard extends Component {
     };
 
     render(){
-        // const FlashCardInnerClass = 'CardInner';
-        // if (this.props.isFlipped) {
-        //     FlashCardInnerClass += ' flipped';
-        // }
         const { vocabWord } = this.props;
         const { showAnswer, input, isFlipped } = this.state;
         return (
