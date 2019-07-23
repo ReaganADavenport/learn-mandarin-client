@@ -58,6 +58,7 @@ class DaysAndMonthsList extends Component {
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
+            <Link to={`days_and_months/practice`}>Want Some More Practice?</Link>
             <Link to={`days_and_months/challenge`}>Want a Challenge?</Link>
             </div>
     )

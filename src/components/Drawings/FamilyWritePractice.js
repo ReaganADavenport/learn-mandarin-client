@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
-import FlashCard from '../Card';
-import "./List.css";
+import WritingCard from '../WritingCard';
+import Writing from './Writing';
+import "../Lists/List.css";
 
 import { Columns, Column } from 'bloomer';
 
 const listStyle = {
-    // backgroundColor: 'rgba(0,0,0, 0.5)',
     alignContent: 'space-between',
     display: 'flex',
     flexWrap: 'wrap',
@@ -19,7 +17,7 @@ const listStyle = {
 }
 
 
-class GreetingList extends Component{
+class FamilyWritePractice extends Component{
     state = {
         vocabulary:[]
     }
@@ -33,7 +31,7 @@ class GreetingList extends Component{
     };
 
     loadData = async () => {
-        const url = 'http://localhost:3000/v1/greetings';
+        const url = 'http://localhost:3000/v1/family';
         const response = await fetch(url);
         const data = response.json();
         console.log('data is', data);
@@ -43,30 +41,24 @@ class GreetingList extends Component{
     render(){
         const { vocabulary } = this.state;
         return(
-            <div className="List">
+            <div className="WritingList">
             <h1>Vocabulary</h1>
-            <h2>Type in the English Translation of the Mandarin Character</h2>
+            <h2>Use the writing pad to practice writing the Chinese character above it.</h2>
             <Columns style={listStyle}>
                 {vocabulary.length > 0 ?
                     vocabulary.map(term =>
                         <Column key={term.id} style={listStyle}>
-                            <FlashCard vocabWord= {term} />
+                            <WritingCard vocabWord= {term}/>
+                            <Writing></Writing>
                         </Column>
                     )
                     :
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
-            <Link to={`greetings/practice`}>Want Some More Practice?</Link>
-            <Link to={`greetings/challenge`}>Want a Challenge?</Link>
             </div>
     )
     }
 }
 
-GreetingList.propTypes = {
-    vocab: PropTypes.array
-};
-
-export default GreetingList;
-
+export default FamilyWritePractice;

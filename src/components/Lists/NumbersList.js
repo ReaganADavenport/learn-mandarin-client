@@ -58,6 +58,7 @@ class NumbersList extends Component {
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
+            <Link to={`numbers/practice`}>What Some Practice?</Link>
             <Link to={`numbers/challenge`}>Want a Challenge?</Link>
             </div>
     )

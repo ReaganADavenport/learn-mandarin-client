@@ -56,6 +56,7 @@ class FamilyList extends Component{
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
+            <Link to={`family/practice`}>Want Some More Practice?</Link>
             <Link to={`family/challenge`}>Want a Challenge?</Link>
             </div>
     )

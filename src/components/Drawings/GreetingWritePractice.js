@@ -46,7 +46,7 @@ class GreetingWritePractice extends Component{
         return(
             <div className="WritingList">
             <h1>Vocabulary</h1>
-            <h2>Type in the English Translation of the Mandarin Character</h2>
+            <h2>Use the writing pad to practice writing the Chinese character above it.</h2>
             <Columns style={listStyle}>
                 {vocabulary.length > 0 ?
                     vocabulary.map(term =>

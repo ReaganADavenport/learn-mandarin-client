@@ -58,6 +58,7 @@ class NationalitiesList extends Component {
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
+            <Link to={`nationalities/practice`}>Want Some More Practice?</Link>
             <Link to={`nationalities/challenge`}>Want a Challenge?</Link>
             </div>
     )
