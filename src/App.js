@@ -7,43 +7,43 @@ import Lessons from './components/Lists/LessonList';
 
 import GreetingList from './components/Lists/GreetingList';
 import GreetingChallenge from './components/Challenges/GreetingChallenge';
-import GreetingWritePractice from './components/Drawings/GreetingWritePractice';
+import GreetingWritePractice from './components/Write/GreetingWritePractice';
 
 import NationalitiesList from './components/Lists/NationalitiesList';
 import NationalitiesChallenge from './components/Challenges/NationalitiesChallenge';
-import NationalitiesWritePractice from './components/Drawings/NationalitiesWritePractice';
+import NationalitiesWritePractice from './components/Write/NationalitiesWritePractice';
 
 import FamilyList from './components/Lists/FamilyList';
 import FamilyChallenge from './components/Challenges/FamilyChallenge';
-import FamilyWritePractice from './components/Drawings/FamilyWritePractice';
+import FamilyWritePractice from './components/Write/FamilyWritePractice';
 
 import NumbersList from './components/Lists/NumbersList';
 import NumbersChallenge from './components/Challenges/NumbersChallenge';
-import NumbersWritePractice from './components/Drawings/NumbersWritePractice';
+import NumbersWritePractice from './components/Write/NumbersWritePractice';
 
 import DaysAndMonthsList from './components/Lists/DaysAndMonthsList';
 import DaysAndMonthsChallenge from './components/Challenges/DaysAndMonthsChallenge';
-import DaysAndMonthsWritePractice from './components/Drawings/DaysAndMonthsWritePractice';
+import DaysAndMonthsWritePractice from './components/Write/DaysAndMonthsWritePractice';
 
 import DatesList from './components/Lists/DatesList';
 import DatesChallenge from './components/Challenges/DatesChallenge';
-import DatesWritePractice from './components/Drawings/DatesWritePractice';
+import DatesWritePractice from './components/Write/DatesWritePractice';
 
 import HobbiesList from './components/Lists/HobbiesList';
 import HobbiesChallenge from './components/Challenges/HobbiesChallenge';
-import HobbiesWritePractice from './components/Drawings/HobbiesWritePractice';
+import HobbiesWritePractice from './components/Write/HobbiesWritePractice';
 
 import VisitingList from './components/Lists/VisitingList';
 import VisitingChallenge from './components/Challenges/VisitingChallenge';
-import VisitingWritePractice from './components/Drawings/VisitingWritePractice';
+import VisitingWritePractice from './components/Write/VisitingWritePractice';
 
 import AppointmentsList from './components/Lists/AppointmentsList';
 import AppointmentsChallenge from './components/Challenges/AppointmentsChallenge';
-import AppointmentsWritePractice from './components/Drawings/AppointmentsWritePractice';
+import AppointmentsWritePractice from './components/Write/AppointmentsWritePractice';
 
 import StudyingList from './components/Lists/StudyingList';
 import StudyingChallenge from './components/Challenges/StudyingChallenge';
-import StudyingWritePractice from './components/Drawings/StudyingWritePractice';
+import StudyingWritePractice from './components/Write/StudyingWritePractice';
 
 import Footer from './components/footer';
 //import CSS
