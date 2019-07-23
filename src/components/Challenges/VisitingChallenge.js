@@ -7,7 +7,7 @@ import './ChallengeList.css';
 import { Columns, Column } from 'bloomer';
 
 const listStyle = {
-    backgroundColor: 'rgba(0,0,0, 0.8)',
+    // backgroundColor: 'rgba(0,0,0, 0.8)',
     alignContent: 'space-between',
     display: 'flex',
     flexWrap: 'wrap',
