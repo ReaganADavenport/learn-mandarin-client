@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 // import PropTypes from 'prop-types';
 // import { Link } from 'react-router-dom';
 
-import FlashCard from '../Card';
-import "./List.css";
+import WritingCard from '../WritingCard';
+import Writing from './Writing';
+import "../Lists/List.css";
 
 import { Columns, Column } from 'bloomer';
 
@@ -43,14 +44,15 @@ class GreetingWritePractice extends Component{
     render(){
         const { vocabulary } = this.state;
         return(
-            <div className="List">
+            <div className="WritingList">
             <h1>Vocabulary</h1>
             <h2>Type in the English Translation of the Mandarin Character</h2>
             <Columns style={listStyle}>
                 {vocabulary.length > 0 ?
                     vocabulary.map(term =>
                         <Column key={term.id} style={listStyle}>
-                            <FlashCard vocabWord= {term} />
+                            <WritingCard vocabWord= {term}/>
+                            <Writing></Writing>
                         </Column>
                     )
                     :

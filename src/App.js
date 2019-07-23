@@ -6,6 +6,7 @@ import Header from './components/header';
 import Lessons from './components/Lists/LessonList';
 import GreetingList from './components/Lists/GreetingList';
 import GreetingChallenge from './components/Challenges/GreetingChallenge';
+import GreetingWritePractice from './components/Drawings/GreetingWritePractice';
 import Writing from './components/Drawings/Writing';
 import NationalitiesList from './components/Lists/NationalitiesList';
 import NationalitiesChallenge from './components/Challenges/NationalitiesChallenge';
@@ -37,9 +38,10 @@ function App() {
       <Router>
         <Header />
         <Route path="/" exact component={Lessons} />
+        <Route path="/writing" component={Writing}/>
         <Route path="/greetings" exact component={GreetingList}/>
         <Route path="/greetings/challenge" component={GreetingChallenge}/>
-        <Route path="/writing" component={Writing}/>
+        <Route path="/greetings/practice" component={GreetingWritePractice}/>
         <Route path="/nationalities" exact component={NationalitiesList}/>
         <Route path="/nationalities/challenge" component={NationalitiesChallenge}/>
         <Route path="/family" exact component={FamilyList}/>
