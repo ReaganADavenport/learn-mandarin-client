@@ -15,32 +15,21 @@ class Writing extends Component {
         saveData: null
     };
 
-    saveCanvasImage = (e) => {
-        e.preventDefault();
+    setCanvasRef = saveableCanvas => ( this.saveableCanvas = saveableCanvas);
 
-        console.log("this.savableCanvas is ", this.saveableCanvas);
-        // localStorage.setItem("userGuess", this.saveableCanvas.getSaveData());
-        // const myImage = localStorage.getItem("userGuess");
-        // console.log("myImage is ", myImage);
-        console.log("canvasDraw is ", this.canvasDraw);
-        const canvasImage = this.canvasDraw.toDataURL();
-            fetch(canvasImage)
-                .then(res => res.blob())
-                .then(blob => {
-                    this.setState({
-                        saveData: blob
-                    })
-                });
-        
+    saveCanvasImage = () => {
+
+        const canvasImage = this.saveableCanvas.canvasContainer.children[1].toDataURL();
+        this.setState({
+            saveData: canvasImage
+        });
     };
 
-    
-    canvasDraw = (canvasDraw) => this.saveableCanvas = canvasDraw;
     render(){
         return(
             <>
                 <CanvasDraw
-                    ref={this.canvasDraw}
+                    ref={this.setCanvasRef}
                     brushRadius={this.state.brushRadius}
                     lazyRadius={this.state.lazyRadius}
                     canvasWidth={this.state.width}
@@ -48,7 +37,7 @@ class Writing extends Component {
                 />
                 <button onClick={() => {this.saveableCanvas.clear()}}>Erase All</button>
                 <button onClick={() => {this.saveableCanvas.undo()}}>Undo</button>
-                <button onClick={(e) => this.saveCanvasImage(e)}>Save</button>
+                <button onClick={() => this.saveCanvasImage()}>Save</button>
                 {!!this.state.saveData ? 
                     <Resemble saveData={this.state.saveData} imageFile={this.state.imageFile}/>
                     : 
