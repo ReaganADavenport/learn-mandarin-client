@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import CanvasDraw from "react-canvas-draw";
 import Resemble from "./Resemble";
+import Greeting1 from '../../images/Greeting1.png';
 // import compare from 'resemblejs';
 // import { toUnicode } from 'punycode';
 // import './Drawings.css';
@@ -39,7 +40,7 @@ class Writing extends Component {
                 <button onClick={() => {this.saveableCanvas.undo()}}>Undo</button>
                 <button onClick={() => this.saveCanvasImage()}>Save</button>
                 {!!this.state.saveData ? 
-                    <Resemble saveData={this.state.saveData} imageFile={this.state.imageFile}/>
+                    <Resemble Answer={Greeting1} Guess={this.state.saveData}/>
                     : 
                     null
                 }
