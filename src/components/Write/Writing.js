@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import CanvasDraw from "react-canvas-draw";
-import { toUnicode } from 'punycode';
+// import { toUnicode } from 'punycode';
 // import './Drawings.css';
 
 class Writing extends Component {
@@ -11,8 +11,6 @@ class Writing extends Component {
         brushRadius: 7,
         lazyRadius: 1
     };
-
-
 
     render(){
         return(

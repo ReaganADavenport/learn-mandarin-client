@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
-
 import "./Card.css";
-
 
 class FlashCard extends Component {
     state = {
