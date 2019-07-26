@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import resemble from 'resemblejs';
+import Image1 from '../../images/answerCards/image1.png';
 
 class Resemble extends Component {
     state = {
-        correct: null
+        correct: null,
+        answerCard: Image1
     }
 
     componentDidMount() {
+        
         this.compare();
     }
 
@@ -26,7 +29,8 @@ class Resemble extends Component {
 
     compare = () => {
         const _this = this;
-        const diff = resemble(this.props.Answer)
+
+        const diff = resemble(this.state.answerCard)
             .compareTo(this.props.Guess)
             .scaleToSameSize()
             .onComplete(function(data){

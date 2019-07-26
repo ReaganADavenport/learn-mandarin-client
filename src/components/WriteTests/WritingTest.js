@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import CanvasDraw from "react-canvas-draw";
 import Resemble from "./Resemble";
-import '../../images/GreetingAnswers';
+
 // import compare from 'resemblejs';
 // import { toUnicode } from 'punycode';
 // import './Drawings.css';
@@ -17,8 +17,9 @@ class Writing extends Component {
     };
 
     componentDidMount() {
+        const AnswerKey = `Image${this.props.answerCard}`;
         this.setState({
-            AnswerKey: this.props.answerCard
+            AnswerKey 
         })
     }
 
