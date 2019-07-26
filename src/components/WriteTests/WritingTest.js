@@ -16,6 +16,12 @@ class Writing extends Component {
         saveData: null
     };
 
+    componentDidMount() {
+        this.setState({
+            AnswerKey: this.props.answerCard
+        })
+    }
+
     setCanvasRef = saveableCanvas => ( this.saveableCanvas = saveableCanvas);
 
     saveCanvasImage = () => {
@@ -27,8 +33,7 @@ class Writing extends Component {
     };
 
     render(){
-        const{ cardId } = this.props;
-        const Answers = "Greeting"+cardId.png
+        const { AnswerKey } = this.state;
         return(
             <>
                 <CanvasDraw
@@ -42,7 +47,7 @@ class Writing extends Component {
                 <button onClick={() => {this.saveableCanvas.undo()}}>Undo</button>
                 <button onClick={() => this.saveCanvasImage()}>Save</button>
                 {!!this.state.saveData ? 
-                    <Resemble Answer={Answers} Guess={this.state.saveData}/>
+                    <Resemble Answer={AnswerKey} Guess={this.state.saveData}/>
                     : 
                     null
                 }
