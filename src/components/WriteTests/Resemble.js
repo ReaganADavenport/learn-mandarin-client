@@ -1,29 +1,62 @@
-import React from 'react';
-import compare from 'resemblejs';
-// import Greeting1 from '../../images/Greeting1.png';
+import React, {Component} from 'react';
+import resemble from 'resemblejs';
 
-const Resemble = props => {
-    console.log("props is ", props);
-    const options = {
-        //stop comparing once the image is found to be > 30% non-matching
-        returnEarlyThreshold: 30
-        }
-    const {Answer, Guess} = props;
+class Resemble extends Component {
+    state = {
+        correct: null
+    }
 
-    compare(Answer, Guess, options, (err, data) =>{
-        if(err){
-            return("I AM ERROR!!!")
+    componentDidMount() {
+        this.compare();
+    }
+
+    setTrueOrFalse = data => {
+        console.log("data is", data);
+        let value = null
+        if(data.rawMisMatchPercentage < 95){
+            value = true;
         } else {
-            return(data);
+            value = false;
         }
-    })
 
-    return (
-        <>
-            <img src={Guess}/>
-        </>
+        this.setState({
+            correct: value
+        })
+    }
 
-    )
+    compare = () => {
+        const _this = this;
+        const diff = resemble(this.props.Answer)
+            .compareTo(this.props.Guess)
+            .scaleToSameSize()
+            .onComplete(function(data){
+                console.log(data);
+                _this.setTrueOrFalse(data);
+            })
+    };
+
+
+    // check = () => {
+    //     const answer = this.compare();
+    //     return answer;
+    // }
+
+    render(){
+        const {correct} = this.state;
+        return (
+            <>
+                {!!correct ?
+                <>
+                    <span>✅</span>
+                </>
+                : 
+                <>
+                    <span>✖️</span>
+                </>
+                }
+            </>
+        )
+    }
 }
 
 export default Resemble;

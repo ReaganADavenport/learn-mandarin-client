@@ -15,7 +15,7 @@ class FlashCard extends Component {
         })
     };
 
-    flipCard = () =>{
+    flipCard = () => {
         this.setState({
             isFlipped:true
         })

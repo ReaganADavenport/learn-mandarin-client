@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import CanvasDraw from "react-canvas-draw";
 import Resemble from "./Resemble";
-import Greeting1 from '../../images/Greeting1.png';
+import '../../images/GreetingAnswers';
 // import compare from 'resemblejs';
 // import { toUnicode } from 'punycode';
 // import './Drawings.css';
@@ -27,6 +27,8 @@ class Writing extends Component {
     };
 
     render(){
+        const{ cardId } = this.props;
+        const Answers = "Greeting"+cardId.png
         return(
             <>
                 <CanvasDraw
@@ -40,7 +42,7 @@ class Writing extends Component {
                 <button onClick={() => {this.saveableCanvas.undo()}}>Undo</button>
                 <button onClick={() => this.saveCanvasImage()}>Save</button>
                 {!!this.state.saveData ? 
-                    <Resemble Answer={Greeting1} Guess={this.state.saveData}/>
+                    <Resemble Answer={Answers} Guess={this.state.saveData}/>
                     : 
                     null
                 }

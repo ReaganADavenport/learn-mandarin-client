@@ -52,7 +52,7 @@ class GreetingWriteTest extends Component{
                         vocabulary.map(term =>
                             <Column key={term.id} style={listStyle}>
                                 <WritingTestCard vocabWord= {term}/>
-                                <WritingTest></WritingTest>
+                                <WritingTest cardId={term.id}></WritingTest>
                             </Column>
                         )
                     :
