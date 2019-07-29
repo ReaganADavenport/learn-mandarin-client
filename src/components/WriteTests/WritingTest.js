@@ -17,7 +17,7 @@ class Writing extends Component {
     };
 
     componentDidMount() {
-        const AnswerKey = `Image${this.props.answerCard}`;
+        const AnswerKey = this.props.answerCard;
         this.setState({
             AnswerKey 
         })
@@ -46,7 +46,7 @@ class Writing extends Component {
                 />
                 <button onClick={() => {this.saveableCanvas.clear()}}>Erase All</button>
                 <button onClick={() => {this.saveableCanvas.undo()}}>Undo</button>
-                <button onClick={() => this.saveCanvasImage()}>Save</button>
+                <button onClick={() => this.saveCanvasImage()}>Submit</button>
                 {!!this.state.saveData ? 
                     <Resemble Answer={AnswerKey} Guess={this.state.saveData}/>
                     : 
