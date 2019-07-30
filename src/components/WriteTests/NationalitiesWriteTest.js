@@ -34,7 +34,7 @@ class GreetingWriteTest extends Component{
     };
 
     loadData = async () => {
-        const url = 'http://localhost:3000/v1/greetings';
+        const url = 'http://localhost:3000/v1/nationalities';
         const response = await fetch(url);
         const data = await response.json();
         console.log('data is', data);

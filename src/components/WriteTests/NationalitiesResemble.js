@@ -2,19 +2,17 @@ import React, {Component} from 'react';
 import resemble from 'resemblejs';
 // import AnswerImage from this.props.Answer;
 
-import Image1 from '../../images/answerCards/Greetings/Image1.png';
-import Image2 from '../../images/answerCards/Greetings/Image2.png';
-import Image3 from '../../images/answerCards/Greetings/Image3.png';
-import Image4 from '../../images/answerCards/Greetings/Image4.png';
-import Image5 from '../../images/answerCards/Greetings/Image5.png';
-import Image6 from '../../images/answerCards/Greetings/Image6.png';
-import Image7 from '../../images/answerCards/Greetings/Image7.png';
-import Image8 from '../../images/answerCards/Greetings/Image8.png';
-import Image9 from '../../images/answerCards/Greetings/Image9.png';
-import Image10 from '../../images/answerCards/Greetings/Image10.png';
-import Image11 from '../../images/answerCards/Greetings/Image11.png';
-import Image12 from '../../images/answerCards/Greetings/Image12.png';
-import Image13 from '../../images/answerCards/Greetings/Image13.png';
+import Image1 from '../../images/answerCards/Nationalities/Image1.png';
+import Image2 from '../../images/answerCards/Nationalities/Image2.png';
+import Image3 from '../../images/answerCards/Nationalities/Image3.png';
+import Image4 from '../../images/answerCards/Nationalities/Image4.png';
+import Image5 from '../../images/answerCards/Nationalities/Image5.png';
+import Image6 from '../../images/answerCards/Nationalities/Image6.png';
+import Image7 from '../../images/answerCards/Nationalities/Image7.png';
+import Image8 from '../../images/answerCards/Nationalities/Image8.png';
+import Image9 from '../../images/answerCards/Nationalities/Image9.png';
+import Image10 from '../../images/answerCards/Nationalities/Image10.png';
+import Image11 from '../../images/answerCards/Nationalities/Image11.png';
 
 
 class Resemble extends Component {

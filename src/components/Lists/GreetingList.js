@@ -59,6 +59,7 @@ class GreetingList extends Component{
             </Columns>
             <Link to={`greetings/practice`}>Want Some More Practice?</Link>
             <Link to={`greetings/challenge`}>Want a Challenge?</Link>
+            <Link to={`greetings/test`}>Want a Test?</Link>
             </div>
     )
     }
