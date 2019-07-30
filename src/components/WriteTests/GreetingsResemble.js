@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import resemble from 'resemblejs';
+// import AnswerImage from this.props.Answer;
 
 import Image1 from '../../images/answerCards/Image1.png';
 import Image2 from '../../images/answerCards/Image2.png';
@@ -25,13 +26,44 @@ class Resemble extends Component {
         // const _this = this;
         // console.log("Image1 is", Image1);
         console.log("user guess image is", this.props.Guess);
-        const AnswerImage = this.props.Answer;
+        const AnswerImage = this.switchImage(this.props.Answer);
         console.log("Answer is ", AnswerImage);
         this.getDataUrl(AnswerImage, dataUri => { //it breaks here
             this.compare(dataUri, this.props.Guess);
             console.log("dataUri is", dataUri);
         });
     };
+
+    switchImage = answer =>{
+        switch(answer){
+            case "Image1":
+                return Image1;
+            case "Image2":
+                return Image2;
+            case "Image3":
+                return Image3;
+            case "Image4":
+                return Image4;
+            case "Image5":
+                return Image5;
+            case "Image6":
+                return Image6;
+            case "Image7":
+                return Image7;
+            case "Image8":
+                return Image8;
+            case "Image9":
+                return Image9;
+            case "Image10":
+                return Image10;
+            case "Image11":
+                return Image11;
+            case "Image12":
+                return Image12;
+            case "Image13":
+                return Image13;
+        }
+    }
 
 
     getDataUrl = (img, callback) => {
@@ -45,7 +77,6 @@ class Resemble extends Component {
             canvas.height = this.height; //make the cavas the same height as image
             
             ctx.drawImage(this, 0, 0); //draw a 2d image useing image at position 0,0.
-            console.log("image is", image)
             callback(canvas.toDataURL('image/png'));
         };
         

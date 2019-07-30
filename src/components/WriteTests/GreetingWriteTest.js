@@ -3,20 +3,6 @@ import React, {Component} from 'react';
 import WritingTestCard from '../WritingTestCard';
 import WritingTest from './WritingTest';
 
-import Image1 from '../../images/answerCards/Image1.png';
-import Image2 from '../../images/answerCards/Image2.png';
-import Image3 from '../../images/answerCards/Image3.png';
-import Image4 from '../../images/answerCards/Image4.png';
-import Image5 from '../../images/answerCards/Image5.png';
-import Image6 from '../../images/answerCards/Image6.png';
-import Image7 from '../../images/answerCards/Image7.png';
-import Image8 from '../../images/answerCards/Image8.png';
-import Image9 from '../../images/answerCards/Image9.png';
-import Image10 from '../../images/answerCards/Image10.png';
-import Image11 from '../../images/answerCards/Image11.png';
-import Image12 from '../../images/answerCards/Image12.png';
-import Image13 from '../../images/answerCards/Image13.png';
-
 import "../Lists/List.css";
 
 import { Columns, Column } from 'bloomer';
@@ -66,7 +52,7 @@ class GreetingWriteTest extends Component{
                         vocabulary.map(term =>
                             <Column key={term.id} style={listStyle}>
                                 <WritingTestCard vocabWord= {term}/>
-                                <WritingTest answerCard={`../../images/answerCards/Image${term.id}.png`}></WritingTest>
+                                <WritingTest answerCard={`Image${term.id}`}></WritingTest>
                             </Column>
                         )
                     :
