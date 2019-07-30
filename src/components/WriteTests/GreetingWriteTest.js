@@ -66,7 +66,7 @@ class GreetingWriteTest extends Component{
                         vocabulary.map(term =>
                             <Column key={term.id} style={listStyle}>
                                 <WritingTestCard vocabWord= {term}/>
-                                <WritingTest answerCard={`Image${term.id}`}></WritingTest>
+                                <WritingTest answerCard={`../../images/answerCards/Image${term.id}.png`}></WritingTest>
                             </Column>
                         )
                     :

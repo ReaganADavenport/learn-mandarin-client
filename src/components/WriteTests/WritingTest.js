@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import CanvasDraw from "react-canvas-draw";
-import Resemble from "./Resemble";
+import Resemble from "./GreetingsResemble";
 
 // import compare from 'resemblejs';
 // import { toUnicode } from 'punycode';
