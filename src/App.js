@@ -18,6 +18,7 @@ import NationalitiesWriteTest from './components/WriteTests/NationalitiesWriteTe
 import FamilyList from './components/Lists/FamilyList';
 import FamilyChallenge from './components/Challenges/FamilyChallenge';
 import FamilyWritePractice from './components/Write/FamilyWritePractice';
+import FamilyWriteTest from './components/WriteTests/FamilyWriteTest';
 
 import NumbersList from './components/Lists/NumbersList';
 import NumbersChallenge from './components/Challenges/NumbersChallenge';
@@ -73,6 +74,7 @@ function App() {
         <Route path="/family" exact component={FamilyList}/>
         <Route path="/family/challenge" component={FamilyChallenge}/>
         <Route path="/family/practice" component={FamilyWritePractice}/>
+        <Route path="/family/test" component={FamilyWriteTest}/>
 
         <Route path="/numbers" exact component={NumbersList}/>
         <Route path="/numbers/challenge" component={NumbersChallenge}/>

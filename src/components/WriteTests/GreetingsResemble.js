@@ -85,7 +85,7 @@ class Resemble extends Component {
     setTrueOrFalse = data => {
         // console.log("data is", data);
         let value = null
-        if(data.rawMisMatchPercentage < 96){
+        if(data.rawMisMatchPercentage < 96.1){
             value = true;
         } else {
             value = false;

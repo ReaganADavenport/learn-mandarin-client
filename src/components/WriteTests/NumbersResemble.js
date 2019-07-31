@@ -2,17 +2,27 @@ import React, {Component} from 'react';
 import resemble from 'resemblejs';
 // import AnswerImage from this.props.Answer;
 
-import Image1 from '../../images/answerCards/Nationalities/Image1.png';
-import Image2 from '../../images/answerCards/Nationalities/Image2.png';
-import Image3 from '../../images/answerCards/Nationalities/Image3.png';
-import Image4 from '../../images/answerCards/Nationalities/Image4.png';
-import Image5 from '../../images/answerCards/Nationalities/Image5.png';
-import Image6 from '../../images/answerCards/Nationalities/Image6.png';
-import Image7 from '../../images/answerCards/Nationalities/Image7.png';
-import Image8 from '../../images/answerCards/Nationalities/Image8.png';
-import Image9 from '../../images/answerCards/Nationalities/Image9.png';
-import Image10 from '../../images/answerCards/Nationalities/Image10.png';
-import Image11 from '../../images/answerCards/Nationalities/Image11.png';
+import Image1 from '../../images/answerCards/Numbers/Image1.png';
+import Image2 from '../../images/answerCards/Numbers/Image2.png';
+import Image3 from '../../images/answerCards/Numbers/Image3.png';
+import Image4 from '../../images/answerCards/Numbers/Image4.png';
+import Image5 from '../../images/answerCards/Numbers/Image5.png';
+import Image6 from '../../images/answerCards/Numbers/Image6.png';
+import Image7 from '../../images/answerCards/Numbers/Image7.png';
+import Image8 from '../../images/answerCards/Numbers/Image8.png';
+import Image9 from '../../images/answerCards/Numbers/Image9.png';
+import Image10 from '../../images/answerCards/Numbers/Image10.png';
+import Image11 from '../../images/answerCards/Numbers/Image11.png';
+import Image12 from '../../images/answerCards/Numbers/Image12.png';
+import Image13 from '../../images/answerCards/Numbers/Image13.png';
+import Image14 from '../../images/answerCards/Numbers/Image14.png';
+import Image15 from '../../images/answerCards/Numbers/Image15.png';
+import Image16 from '../../images/answerCards/Numbers/Image16.png';
+import Image17 from '../../images/answerCards/Numbers/Image17.png';
+import Image18 from '../../images/answerCards/Numbers/Image18.png';
+import Image19 from '../../images/answerCards/Numbers/Image19.png';
+import Image20 from '../../images/answerCards/Numbers/Image20.png';
+import Image21 from '../../images/answerCards/Numbers/Image21.png';
 
 
 class Resemble extends Component {
@@ -60,6 +70,22 @@ class Resemble extends Component {
                 return Image12;
             case "Image13":
                 return Image13;
+            case "Image14":
+                return Image14;
+            case "Image15":
+                return Image15;
+            case "Image16":
+                return Image16;
+            case "Image17":
+                return Image17;
+            case "Image18":
+                return Image18;
+            case "Image19":
+                return Image19;
+            case "Image20":
+                return Image20;
+            case "Image21":
+                return Image21;
         }
     }
 
