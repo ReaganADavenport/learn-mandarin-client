@@ -60,6 +60,7 @@ class DaysAndMonthsList extends Component {
             </Columns>
             <Link to={`days_and_months/practice`}>Want Some More Practice?</Link>
             <Link to={`days_and_months/challenge`}>Want a Challenge?</Link>
+            <Link to={`days_and_months/test`}>Want a Test?</Link>
             </div>
     )
     }

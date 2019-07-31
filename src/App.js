@@ -23,10 +23,12 @@ import FamilyWriteTest from './components/WriteTests/FamilyWriteTest';
 import NumbersList from './components/Lists/NumbersList';
 import NumbersChallenge from './components/Challenges/NumbersChallenge';
 import NumbersWritePractice from './components/Write/NumbersWritePractice';
+import NumbersWriteTest from './components/WriteTests/NumbersWriteTest';
 
 import DaysAndMonthsList from './components/Lists/DaysAndMonthsList';
 import DaysAndMonthsChallenge from './components/Challenges/DaysAndMonthsChallenge';
 import DaysAndMonthsWritePractice from './components/Write/DaysAndMonthsWritePractice';
+import DaysAndMonthsWriteTest from './components/WriteTests/DaysAndMonthsWriteTest';
 
 import DatesList from './components/Lists/DatesList';
 import DatesChallenge from './components/Challenges/DatesChallenge';
@@ -79,10 +81,12 @@ function App() {
         <Route path="/numbers" exact component={NumbersList}/>
         <Route path="/numbers/challenge" component={NumbersChallenge}/>
         <Route path="/numbers/practice" component={NumbersWritePractice}/>
+        <Route path="/numbers/test" component={NumbersWriteTest}/>
 
         <Route path="/days_and_months" exact component={DaysAndMonthsList}/>
         <Route path="/days_and_months/challenge" component={DaysAndMonthsChallenge}/>
         <Route path="/days_and_months/practice" component={DaysAndMonthsWritePractice}/>
+        <Route path="/days_and_months/test" component={DaysAndMonthsWriteTest}/>
 
         <Route path="/dates" exact component={DatesList}/>
         <Route path="/dates/challenge" component={DatesChallenge}/>

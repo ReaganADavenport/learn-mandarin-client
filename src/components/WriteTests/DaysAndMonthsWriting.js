@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import CanvasDraw from "react-canvas-draw";
-import Resemble from "./NumbersResemble";
+import Resemble from "./DaysAndMonthsResemble";
 
 
 // import compare from 'resemblejs';git

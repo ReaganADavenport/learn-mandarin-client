@@ -60,6 +60,7 @@ class NumbersList extends Component {
             </Columns>
             <Link to={`numbers/practice`}>What Some Practice?</Link>
             <Link to={`numbers/challenge`}>Want a Challenge?</Link>
+            <Link to={`numbers/test`}>Want a Test?</Link>
             </div>
     )
     }
