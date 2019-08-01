@@ -33,10 +33,12 @@ import DaysAndMonthsWriteTest from './components/WriteTests/DaysAndMonthsWriteTe
 import DatesList from './components/Lists/DatesList';
 import DatesChallenge from './components/Challenges/DatesChallenge';
 import DatesWritePractice from './components/Write/DatesWritePractice';
+import DatesWriteTest from './components/WriteTests/DatesWriteTest';
 
 import HobbiesList from './components/Lists/HobbiesList';
 import HobbiesChallenge from './components/Challenges/HobbiesChallenge';
 import HobbiesWritePractice from './components/Write/HobbiesWritePractice';
+import HobbiesWriteTest from './components/WriteTests/HobbiesWriteTest';
 
 import VisitingList from './components/Lists/VisitingList';
 import VisitingChallenge from './components/Challenges/VisitingChallenge';
@@ -91,10 +93,12 @@ function App() {
         <Route path="/dates" exact component={DatesList}/>
         <Route path="/dates/challenge" component={DatesChallenge}/>
         <Route path="/dates/practice" component={DatesWritePractice}/>
+        <Route path="/dates/test" component={DatesWriteTest}/>
 
         <Route path="/hobbies" exact component={HobbiesList}/>
         <Route path="/hobbies/challenge" component={HobbiesChallenge}/>
         <Route path="/hobbies/practice" component={HobbiesWritePractice}/>
+        <Route path="/hobbies/test" component={HobbiesWriteTest}/>
 
         <Route path="/visiting" exact component={VisitingList}/>
         <Route path="/visiting/challenge" component={VisitingChallenge}/>

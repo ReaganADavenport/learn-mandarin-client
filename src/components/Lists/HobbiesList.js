@@ -60,6 +60,7 @@ class HobbiesList extends Component {
             </Columns>
             <Link to={`hobbies/practice`}>Want Some More Practice?</Link>
             <Link to={`hobbies/challenge`}>Want a Challenge?</Link>
+            <Link to={`hobbies/test`}>Want a Test?</Link>
             </div>
     )
     }

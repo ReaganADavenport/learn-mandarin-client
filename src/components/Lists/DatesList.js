@@ -61,6 +61,7 @@ class DatesList extends Component {
             </Columns>
             <Link to={`dates/practice`}>Want Some More Practice?</Link>
             <Link to={`dates/challenge`}>Want a Challenge?</Link>
+            <Link to={`dates/test`}>Want a Test?</Link>
             </div>
     )
     }
