@@ -22,14 +22,6 @@ import Image17 from '../../images/answerCards/Dates/Image17.png';
 import Image18 from '../../images/answerCards/Dates/Image18.png';
 import Image19 from '../../images/answerCards/Dates/Image19.png';
 import Image20 from '../../images/answerCards/Dates/Image20.png';
-import Image21 from '../../images/answerCards/Dates/Image21.png';
-import Image22 from '../../images/answerCards/Dates/Image22.png';
-import Image23 from '../../images/answerCards/Dates/Image23.png';
-import Image24 from '../../images/answerCards/Dates/Image24.png';
-import Image25 from '../../images/answerCards/Dates/Image25.png';
-import Image26 from '../../images/answerCards/Dates/Image26.png';
-import Image27 from '../../images/answerCards/Dates/Image27.png';
-import Image28 from '../../images/answerCards/Dates/Image28.png';
 
 class Resemble extends Component {
     state = {
