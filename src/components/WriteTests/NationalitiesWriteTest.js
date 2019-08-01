@@ -20,7 +20,7 @@ const listStyle = {
 }
 
 
-class GreetingWriteTest extends Component{
+class NationalitiesWriteTest extends Component{
     state = {
         vocabulary:[]
     }
@@ -64,4 +64,4 @@ class GreetingWriteTest extends Component{
     }
 }
 
-export default GreetingWriteTest;
+export default NationalitiesWriteTest;

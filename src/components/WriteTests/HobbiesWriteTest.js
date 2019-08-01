@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import WritingTestCard from '../WritingTestCard';
-import WritingTest from './DaysAndMonthsWriting';
+import WritingTest from './DatesWriting';
 
 import "../Lists/List.css";
 
@@ -20,7 +20,7 @@ const listStyle = {
 }
 
 
-class DaysAndMonthsWriteTest extends Component{
+class HobbiesWriteTest extends Component{
     state = {
         vocabulary:[]
     }
@@ -34,7 +34,7 @@ class DaysAndMonthsWriteTest extends Component{
     };
 
     loadData = async () => {
-        const url = 'http://localhost:3000/v1/days_and_months';
+        const url = 'http://localhost:3000/v1/hobbies';
         const response = await fetch(url);
         const data = await response.json();
         console.log('data is', data);
@@ -64,4 +64,4 @@ class DaysAndMonthsWriteTest extends Component{
     }
 }
 
-export default DaysAndMonthsWriteTest;
+export default HobbiesWriteTest;
