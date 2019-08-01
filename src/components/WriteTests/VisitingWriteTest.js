@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import WritingTestCard from '../WritingTestCard';
-import WritingTest from './HobbiesWriting';
+import WritingTest from './VisitingWriting';
 
 import "../Lists/List.css";
 
@@ -34,7 +34,7 @@ class HobbiesWriteTest extends Component{
     };
 
     loadData = async () => {
-        const url = 'http://localhost:3000/v1/hobbies';
+        const url = 'http://localhost:3000/v1/visiting';
         const response = await fetch(url);
         const data = await response.json();
         console.log('data is', data);

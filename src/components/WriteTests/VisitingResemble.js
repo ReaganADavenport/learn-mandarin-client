@@ -2,26 +2,32 @@ import React, {Component} from 'react';
 import resemble from 'resemblejs';
 // import AnswerImage from this.props.Answer;
 
-import Image1 from '../../images/answerCards/Dates/Image1.png';
-import Image2 from '../../images/answerCards/Dates/Image2.png';
-import Image3 from '../../images/answerCards/Dates/Image3.png';
-import Image4 from '../../images/answerCards/Dates/Image4.png';
-import Image5 from '../../images/answerCards/Dates/Image5.png';
-import Image6 from '../../images/answerCards/Dates/Image6.png';
-import Image7 from '../../images/answerCards/Dates/Image7.png';
-import Image8 from '../../images/answerCards/Dates/Image8.png';
-import Image9 from '../../images/answerCards/Dates/Image9.png';
-import Image10 from '../../images/answerCards/Dates/Image10.png';
-import Image11 from '../../images/answerCards/Dates/Image11.png';
-import Image12 from '../../images/answerCards/Dates/Image12.png';
-import Image13 from '../../images/answerCards/Dates/Image13.png';
-import Image14 from '../../images/answerCards/Dates/Image14.png';
-import Image15 from '../../images/answerCards/Dates/Image15.png';
-import Image16 from '../../images/answerCards/Dates/Image16.png';
-import Image17 from '../../images/answerCards/Dates/Image17.png';
-import Image18 from '../../images/answerCards/Dates/Image18.png';
-import Image19 from '../../images/answerCards/Dates/Image19.png';
-import Image20 from '../../images/answerCards/Dates/Image20.png';
+import Image1 from '../../images/answerCards/Visiting/Image1.png';
+import Image2 from '../../images/answerCards/Visiting/Image2.png';
+import Image3 from '../../images/answerCards/Visiting/Image3.png';
+import Image4 from '../../images/answerCards/Visiting/Image4.png';
+import Image5 from '../../images/answerCards/Visiting/Image5.png';
+import Image6 from '../../images/answerCards/Visiting/Image6.png';
+import Image7 from '../../images/answerCards/Visiting/Image7.png';
+import Image8 from '../../images/answerCards/Visiting/Image8.png';
+import Image9 from '../../images/answerCards/Visiting/Image9.png';
+import Image10 from '../../images/answerCards/Visiting/Image10.png';
+import Image11 from '../../images/answerCards/Visiting/Image11.png';
+import Image12 from '../../images/answerCards/Visiting/Image12.png';
+import Image13 from '../../images/answerCards/Visiting/Image13.png';
+import Image14 from '../../images/answerCards/Visiting/Image14.png';
+import Image15 from '../../images/answerCards/Visiting/Image15.png';
+import Image16 from '../../images/answerCards/Visiting/Image16.png';
+import Image17 from '../../images/answerCards/Visiting/Image17.png';
+import Image18 from '../../images/answerCards/Visiting/Image18.png';
+import Image19 from '../../images/answerCards/Visiting/Image19.png';
+import Image20 from '../../images/answerCards/Visiting/Image20.png';
+import Image21 from '../../images/answerCards/Visiting/Image21.png';
+import Image22 from '../../images/answerCards/Visiting/Image22.png';
+import Image23 from '../../images/answerCards/Visiting/Image23.png';
+import Image24 from '../../images/answerCards/Visiting/Image24.png';
+import Image25 from '../../images/answerCards/Visiting/Image25.png';
+import Image26 from '../../images/answerCards/Visiting/Image26.png';
 
 class Resemble extends Component {
     state = {
@@ -82,6 +88,18 @@ class Resemble extends Component {
                 return Image19;
             case "Image20":
                 return Image20;
+            case "Image21":
+                return Image21;
+            case "Image22":
+                return Image22;
+            case "Image23":
+                return Image23;
+            case "Image24":
+                return Image24;
+            case "Image25":
+                return Image25;
+            case "Image26":
+                return Image26;
         }
     }
 

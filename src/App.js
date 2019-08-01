@@ -43,6 +43,7 @@ import HobbiesWriteTest from './components/WriteTests/HobbiesWriteTest';
 import VisitingList from './components/Lists/VisitingList';
 import VisitingChallenge from './components/Challenges/VisitingChallenge';
 import VisitingWritePractice from './components/Write/VisitingWritePractice';
+import VisitingWriteTest from './components/WriteTests/VisitingWriteTest';
 
 import AppointmentsList from './components/Lists/AppointmentsList';
 import AppointmentsChallenge from './components/Challenges/AppointmentsChallenge';
@@ -103,6 +104,7 @@ function App() {
         <Route path="/visiting" exact component={VisitingList}/>
         <Route path="/visiting/challenge" component={VisitingChallenge}/>
         <Route path="/visiting/practice" component={VisitingWritePractice}/>
+        <Route path="/visiting/test" component={VisitingWriteTest}/>
 
         <Route path="/appointments" exact component={AppointmentsList}/>
         <Route path="/appointments/challenge" component={AppointmentsChallenge}/>
