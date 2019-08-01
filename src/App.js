@@ -48,10 +48,12 @@ import VisitingWriteTest from './components/WriteTests/VisitingWriteTest';
 import AppointmentsList from './components/Lists/AppointmentsList';
 import AppointmentsChallenge from './components/Challenges/AppointmentsChallenge';
 import AppointmentsWritePractice from './components/Write/AppointmentsWritePractice';
+import AppointmentsWriteTest from './components/WriteTests/AppointmentsWriteTest';
 
 import StudyingList from './components/Lists/StudyingList';
 import StudyingChallenge from './components/Challenges/StudyingChallenge';
 import StudyingWritePractice from './components/Write/StudyingWritePractice';
+// import StudyingWriteTest from './components/WriteTests/StudyingWriteTest';
 
 import Footer from './components/footer';
 //import CSS
@@ -109,10 +111,12 @@ function App() {
         <Route path="/appointments" exact component={AppointmentsList}/>
         <Route path="/appointments/challenge" component={AppointmentsChallenge}/>
         <Route path="/appointments/practice" component={AppointmentsWritePractice}/>
+        <Route path="/appointments/test" component={AppointmentsWriteTest}/>
 
         <Route path="/studying" exact component={StudyingList}/>
         <Route path="/studying/challenge" component={StudyingChallenge}/>
         <Route path="/studying/practice" component={StudyingWritePractice}/>
+        {/* <Route path="/studying/test" component={StudyingWriteTest}/> */}
 
         <Footer />
       </Router>
