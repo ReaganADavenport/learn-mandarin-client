@@ -58,9 +58,9 @@ class NumbersList extends Component {
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
-            <Link to={`numbers/practice`}>What Some Practice?</Link>
-            <Link to={`numbers/challenge`}>Want a Challenge?</Link>
-            <Link to={`numbers/test`}>Want a Test?</Link>
+            <Link to={`numbers/practice`}>Practice Writing Characters</Link>
+            <Link to={`numbers/pinyin`}>English -> Pinyin</Link>
+            <Link to={`numbers/test`}>English -> Character</Link>
             </div>
     )
     }

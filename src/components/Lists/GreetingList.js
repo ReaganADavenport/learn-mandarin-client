@@ -57,9 +57,9 @@ class GreetingList extends Component{
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
-            <Link to={`greetings/practice`}>Want Some More Practice?</Link>
-            <Link to={`greetings/challenge`}>Want a Challenge?</Link>
-            <Link to={`greetings/test`}>Want a Test?</Link>
+            <Link to={`greetings/practice`}>Practice Writing Characters</Link>
+            <Link to={`greetings/pinyin`}>English -> Pinyin</Link>
+            <Link to={`greetings/test`}>English -> Character</Link>
             </div>
     )
     }

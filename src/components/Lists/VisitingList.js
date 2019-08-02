@@ -58,9 +58,9 @@ class VisitingList extends Component {
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
-            <Link to={`visiting/practice`}>Want Some More Practice?</Link>
-            <Link to={`visiting/challenge`}>Want a Challenge?</Link>
-            <Link to={`visiting/test`}>Want a Test?</Link>
+            <Link to={`visiting/practice`}>Practice Writing Characters</Link>
+            <Link to={`visiting/pinyin`}>English -> Pinyin</Link>
+            <Link to={`visiting/test`}>English -> Character</Link>
             </div>
         )
     }

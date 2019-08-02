@@ -58,8 +58,9 @@ class AppointmentsList extends Component {
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
-            <Link to={`appointments/practice`}>Want Some More Practice?</Link>
-            <Link to={`appointments/challenge`}>Want a Challenge?</Link>
+            <Link to={`appointments/practice`}>Practice Writing Characters</Link>
+            <Link to={`appointments/pinyin`}>English -> Pinyin</Link>
+            <Link to={`appointments/test`}>English -> Character</Link>
             </div>
     )
     }
