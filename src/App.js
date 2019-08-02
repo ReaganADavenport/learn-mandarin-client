@@ -9,11 +9,13 @@ import GreetingList from './components/Lists/GreetingList';
 import GreetingPinyin from './components/Challenges/GreetingChallenge';
 import GreetingWritePractice from './components/Write/GreetingWritePractice';
 import GreetingWriteTest from './components/WriteTests/GreetingWriteTest';
+import GreetingReading from './components/Reading/GreetingReading';
 
 import NationalitiesList from './components/Lists/NationalitiesList';
 import NationalitiesPinyin from './components/Challenges/NationalitiesChallenge';
 import NationalitiesWritePractice from './components/Write/NationalitiesWritePractice';
 import NationalitiesWriteTest from './components/WriteTests/NationalitiesWriteTest';
+import NationalitiesReading from './components/Reading/NationalitiesReading';
 
 import FamilyList from './components/Lists/FamilyList';
 import FamilyPinyin from './components/Challenges/FamilyChallenge';
@@ -72,11 +74,13 @@ function App() {
         <Route path="/greetings/pinyin" component={GreetingPinyin}/>
         <Route path="/greetings/practice" component={GreetingWritePractice}/>
         <Route path="/greetings/test" component={GreetingWriteTest}/>
+        <Route path="/greetings/reading" component={GreetingReading}/>
 
         <Route path="/nationalities" exact component={NationalitiesList}/>
         <Route path="/nationalities/pinyin" component={NationalitiesPinyin}/>
         <Route path="/nationalities/practice" component={NationalitiesWritePractice}/>
         <Route path="/nationalities/test" component={NationalitiesWriteTest}/>
+        <Route path="/nationalities/reading" component={NationalitiesReading}/>
 
         <Route path="/family" exact component={FamilyList}/>
         <Route path="/family/pinyin" component={FamilyPinyin}/>
