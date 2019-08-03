@@ -58,6 +58,7 @@ class NationalitiesList extends Component {
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
+            <Link to={`nationalities/reading`}>Reading</Link>
             <Link to={`nationalities/practice`}>Practice Writing Characters</Link>
             <Link to={`nationalities/pinyin`}>English -> Pinyin</Link>
             <Link to={`nationalities/test`}>English -> Character</Link>

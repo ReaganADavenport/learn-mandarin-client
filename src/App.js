@@ -21,6 +21,7 @@ import FamilyList from './components/Lists/FamilyList';
 import FamilyPinyin from './components/Challenges/FamilyChallenge';
 import FamilyWritePractice from './components/Write/FamilyWritePractice';
 import FamilyWriteTest from './components/WriteTests/FamilyWriteTest';
+import FamilyReading from './components/Reading/FamilyReading';
 
 import NumbersList from './components/Lists/NumbersList';
 import NumbersPinyin from './components/Challenges/NumbersChallenge';
@@ -36,6 +37,7 @@ import DatesList from './components/Lists/DatesList';
 import DatesPinyin from './components/Challenges/DatesChallenge';
 import DatesWritePractice from './components/Write/DatesWritePractice';
 import DatesWriteTest from './components/WriteTests/DatesWriteTest';
+import DatesReading from './components/Reading/DatesReading';
 
 import HobbiesList from './components/Lists/HobbiesList';
 import HobbiesPinyin from './components/Challenges/HobbiesChallenge';
@@ -86,6 +88,7 @@ function App() {
         <Route path="/family/pinyin" component={FamilyPinyin}/>
         <Route path="/family/practice" component={FamilyWritePractice}/>
         <Route path="/family/test" component={FamilyWriteTest}/>
+        <Route path="/family/reading" component={FamilyReading}/>
 
         <Route path="/numbers" exact component={NumbersList}/>
         <Route path="/numbers/pinyin" component={NumbersPinyin}/>
@@ -101,6 +104,7 @@ function App() {
         <Route path="/dates/pinyin" component={DatesPinyin}/>
         <Route path="/dates/practice" component={DatesWritePractice}/>
         <Route path="/dates/test" component={DatesWriteTest}/>
+        <Route path="/dates/reading" component={DatesReading}/>
 
         <Route path="/hobbies" exact component={HobbiesList}/>
         <Route path="/hobbies/pinyin" component={HobbiesPinyin}/>

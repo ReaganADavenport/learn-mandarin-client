@@ -59,6 +59,7 @@ class DatesList extends Component {
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
+            <Link to={`dates/reading`}>Reading</Link>
             <Link to={`dates/practice`}>Practice Writing Characters</Link>
             <Link to={`dates/pinyin`}>English -> Pinyin</Link>
             <Link to={`dates/test`}>English -> Character</Link>

@@ -56,6 +56,7 @@ class FamilyList extends Component{
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
+            <Link to={`family/reading`}>Reading</Link>
             <Link to={`family/practice`}>Practice Writing Characters</Link>
             <Link to={`family/pinyin`}>English -> Pinyin</Link>
             <Link to={`family/test`}>English -> Character</Link>
