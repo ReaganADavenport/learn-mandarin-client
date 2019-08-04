@@ -43,6 +43,7 @@ import HobbiesList from './components/Lists/HobbiesList';
 import HobbiesPinyin from './components/Challenges/HobbiesChallenge';
 import HobbiesWritePractice from './components/Write/HobbiesWritePractice';
 import HobbiesWriteTest from './components/WriteTests/HobbiesWriteTest';
+import HobbiesReading from './components/Reading/HobbiesReading';
 
 import VisitingList from './components/Lists/VisitingList';
 import VisitingPinyin from './components/Challenges/VisitingChallenge';
@@ -110,6 +111,7 @@ function App() {
         <Route path="/hobbies/pinyin" component={HobbiesPinyin}/>
         <Route path="/hobbies/practice" component={HobbiesWritePractice}/>
         <Route path="/hobbies/test" component={HobbiesWriteTest}/>
+        <Route path="/hobbies/reading" component={HobbiesReading}/>
 
         <Route path="/visiting" exact component={VisitingList}/>
         <Route path="/visiting/pinyin" component={VisitingPinyin}/>
