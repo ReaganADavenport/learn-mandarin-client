@@ -58,6 +58,7 @@ class VisitingList extends Component {
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
+            <Link to={`visiting/reading`}>Reading</Link>
             <Link to={`visiting/practice`}>Practice Writing Characters</Link>
             <Link to={`visiting/pinyin`}>English -> Pinyin</Link>
             <Link to={`visiting/test`}>English -> Character</Link>

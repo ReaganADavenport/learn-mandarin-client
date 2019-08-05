@@ -49,6 +49,7 @@ import VisitingList from './components/Lists/VisitingList';
 import VisitingPinyin from './components/Challenges/VisitingChallenge';
 import VisitingWritePractice from './components/Write/VisitingWritePractice';
 import VisitingWriteTest from './components/WriteTests/VisitingWriteTest';
+import VisitingReading from './components/Reading/VisitingReading';
 
 import AppointmentsList from './components/Lists/AppointmentsList';
 import AppointmentsPinyin from './components/Challenges/AppointmentsChallenge';
@@ -117,16 +118,19 @@ function App() {
         <Route path="/visiting/pinyin" component={VisitingPinyin}/>
         <Route path="/visiting/practice" component={VisitingWritePractice}/>
         <Route path="/visiting/test" component={VisitingWriteTest}/>
+        <Route path="/visiting/reading" component={VisitingReading}/>
 
         <Route path="/appointments" exact component={AppointmentsList}/>
         <Route path="/appointments/pinyin" component={AppointmentsPinyin}/>
         <Route path="/appointments/practice" component={AppointmentsWritePractice}/>
         <Route path="/appointments/test" component={AppointmentsWriteTest}/>
+        <Route path="/appointments/reading" component={HobbiesReading}/>
 
         <Route path="/studying" exact component={StudyingList}/>
         <Route path="/studying/pinyin" component={StudyingPinyin}/>
         <Route path="/studying/practice" component={StudyingWritePractice}/>
         <Route path="/studying/test" component={StudyingWriteTest}/>
+        <Route path="/studying/reading" component={HobbiesReading}/>
 
         <Footer />
       </Router>
