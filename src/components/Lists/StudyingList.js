@@ -58,6 +58,7 @@ class StudyingList extends Component {
                     <Column>No Vocabulary</Column>
                 }
             </Columns>
+            <Link to={`studying/reading`}>Reading</Link>
             <Link to={`studying/practice`}>Practice Writing Characters</Link>
             <Link to={`studying/pinyin`}>English -> Pinyin</Link>
             <Link to={`studying/test`}>English -> Character</Link>

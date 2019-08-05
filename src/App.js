@@ -55,11 +55,13 @@ import AppointmentsList from './components/Lists/AppointmentsList';
 import AppointmentsPinyin from './components/Challenges/AppointmentsChallenge';
 import AppointmentsWritePractice from './components/Write/AppointmentsWritePractice';
 import AppointmentsWriteTest from './components/WriteTests/AppointmentsWriteTest';
+import AppointmentsReading from './components/Reading/AppointmentsReading';
 
 import StudyingList from './components/Lists/StudyingList';
 import StudyingPinyin from './components/Challenges/StudyingChallenge';
 import StudyingWritePractice from './components/Write/StudyingWritePractice';
 import StudyingWriteTest from './components/WriteTests/StudyingWriteTest';
+import StudyingReading from './components/Reading/StudyingReading';
 
 import Footer from './components/footer';
 //import CSS
@@ -124,13 +126,13 @@ function App() {
         <Route path="/appointments/pinyin" component={AppointmentsPinyin}/>
         <Route path="/appointments/practice" component={AppointmentsWritePractice}/>
         <Route path="/appointments/test" component={AppointmentsWriteTest}/>
-        <Route path="/appointments/reading" component={HobbiesReading}/>
+        <Route path="/appointments/reading" component={AppointmentsReading}/>
 
         <Route path="/studying" exact component={StudyingList}/>
         <Route path="/studying/pinyin" component={StudyingPinyin}/>
         <Route path="/studying/practice" component={StudyingWritePractice}/>
         <Route path="/studying/test" component={StudyingWriteTest}/>
-        <Route path="/studying/reading" component={HobbiesReading}/>
+        <Route path="/studying/reading" component={StudyingReading}/>
 
         <Footer />
       </Router>

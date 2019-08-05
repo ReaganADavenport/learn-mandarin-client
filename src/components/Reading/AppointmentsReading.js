@@ -27,19 +27,21 @@ const AppointmentsReading = () => {
 
             <h1>Translation</h1>
             <ul>
-                <li>Jiang Zidian: Who is it?</li>
-                <li>Wei Dayin: It's me, Wei Dayin and Lan Minyu.</li>
-                <li>Jiang Zidian: Come in, come in. Quickly come in. Come here, I want to introduce you to someone, this is my older sister Jiang Xialian.</li>
-                <li>Wei Dayin and Lan Mingyu: Xialian, hello. Please to meet you.</li>
-                <li>Jiang Xialian: I'm pleased to meet you too.</li>
-                <li>Lan Mingyu：Your house if very big and beautiful.</li>
-                <li>Jiang Xialian: Really? Please have a seat, please sit.</li>
-                <li>Wei Dayin: Jiang Xialian, where do you work?</li>
-                <li>Jiang Xialian: I work at the school. Do you want a little something to drink? Some tea or coffee?</li>
-                <li>Wei Dayin: I would like some tea.</li>
-                <li>Lan Mingyu: I would like some Coke, if that is alright.</li>
-                <li>Jiang Xialian: I'm sorry, we don't have any Coke.</li>
-                <li>Lan Mingyu: Then please give me a glass of water.</li>
+                <li>Professor Wen: Hello?</li>
+                <li>Lan Mingyu: Hello, if I may, is Professor Wen there?</li>
+                <li>Professor Wen: I am here. Who is this?</li>
+                <li>Lan Mingyu: Professor, hello. It's me, Lan Mingyu.</li>
+                <li>Professor Wen: Lan Mingyu, is there a matter you which to discuss?</li>
+                <li>Lan Mingyu：Professor, do you have a moment this afternoon? I would like to ask you some questions.</li>
+                <li>Professor Wen: I'm sorry, this afternoon I have a meeting.</li>
+                <li>Lan Mingyu: Tomorrow, then?</li>
+                <li>Professor Wen: Tomorrow morning I have two classes to teach, at 3 in the afternoon I need to give the second years a test.</li>
+                <li>Lan Mingyu: When will you have some free time?</li>
+                <li>Professor Wen: Tomorrow after 4 o'clock, I have some free time.</li>
+                <li>Lan Mingyu: If it is convenient for you, would it be ok for me to meet you at your office at 4:30?</li>
+                <li>Professor Wen: 4:30, no problem. I will wait in my office for you.</li>
+                <li>Lan Mingyu: Thank you so much.</li>
+                <li>Professor Wen: My pleasure.</li>
             </ul>
         </div>
     );
