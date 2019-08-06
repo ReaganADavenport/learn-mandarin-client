@@ -1,7 +1,7 @@
 .Text {
     background-image: url('../../images/chinese-frame-background_48190-346.jpg');
     background-repeat: repeat-y;
-    background-size: contain;
+    background-size: cover;
     color: white;
     /* height: 95vh; */
     margin: 0;
